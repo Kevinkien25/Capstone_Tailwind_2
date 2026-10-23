@@ -1,1535 +1,1353 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ascent - Skeleton Layout</title>
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascent - Childcare & Kids School (Skeleton Layout)</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
 
-    <!-- Swiper & Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- tailwindcss -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- SVG Icons -->
+    <link rel="stylesheet" href="./icons/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Tailwind v4 Browser CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.compat.css">
 
-    <style type="text/tailwindcss">
-      @theme {
-        /* Khai báo font bubblegum-sans */
-        --font-bubblegum-sans: "Bubblegum Sans", cursive;
-        /* Khai báo font Nunito */
-        --font-nunito: "Nunito", sans-serif;
-      }
-    </style>
-    <!-- font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
-      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- animate.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <!-- wow -->
-    <link rel="stylesheet" href="libs/animate.css" />
-    <!-- animate-float-x -->
-    <style type="text/tailwindcss">
-      @theme {
-        /* Thêm dòng này để tạo hiệu ứng lắc qua phải rồi về trái */
-        --animate-float-x: float-x 2s ease-in-out infinite;
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-        @keyframes float-x {
-          0%,
-          100% {
-            transform: translateX(0);
-          }
-          50% {
-            transform: translateX(15px);
-          }
-        }
-      }
-    </style>
-    <!-- flowbite -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
-      rel="stylesheet"
-    /> -->
-    <!-- Style CSS & Icons -->
-    <link rel="stylesheet" href="./icons/style.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-
-  <body>
-    <!-- ==========================================================================
-         MỤC 1: HEADER (Top Header & Main Navbar)
-         ========================================================================== -->
+<body>
+    <!-- PART 1: DEV 1 (HEADER TO SERVICES) -->
+    <!-- PART 1 - SECTION 1: HEADER & NAVIGATION BAR -->
     <header id="header">
-      <!-- Top Header -->
-      <div id="top-header">
-        <div>
-          <span>(629) 555-0129</span>
-          <span>info@example.com</span>
-          <span>6391 Elgin St. Celina, 10299</span>
-        </div>
-        <div>
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Pinterest</a>
-          <a href="#">Linkedin</a>
-        </div>
-      </div>
+        <div id="header-container">
+            <!-- top header start -->
+            <div id="top-header">
+                <div class="container">
+                    <div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span>(629) 555-0129</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"> 
+                                        <span>info@example.com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <p> 
+                                        <span>6391 Elgin St. Celina, 10299</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top header end -->
+            <!-- bottom header -->
+            <div>
+                <div class="container">
+                    <div>
+                        <div>
+                            <a href="#">
+                                <img src="images/logo.png" alt="img">
+                                <span>Ascent</span>
+                            </a>
+                        </div>
+                        <div>
+                            <!-- desktop navbanr start -->
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Home </a>
 
-      <!-- Main Navbar -->
-      <nav id="navbar">
-        <a href="index.html">
-          <img src="images/logo.png" alt="Ascent Logo" />
-        </a>
-        <ul>
-          <li><a href="#banner">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#programs">Services</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-        <a href="#contact">Get A Quote</a>
-      </nav>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Home-1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#home">Home-2</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#about">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services </a>
+                                        
+                                        <ul>
+                                            <li>
+                                                <a href="#services">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="#services">Service Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog </a>
+                                        
+                                        <ul>
+                                            <li>
+                                                <a href="#blog">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="#blog">Blog Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Page </a>
+                                        
+                                        <ul>
+                                            <li>
+                                                <a href="#">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="#services">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="#services">Service Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="#faq">Faq</a>
+                                            </li>
+                                            <li>
+                                                <a href="#portfolio">Portfolio</a>
+                                            </li>
+                                            <li>
+                                                <a href="#contact">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#contact">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- desktop navbanr end -->
+
+                            <!-- tab and mobile navbanr start -->
+                            <div>
+                                <div></div>
+                                <nav>
+                                    <div>
+                                        <a href="#">
+                                            <img src="images/logo.png" alt="img">
+                                            <span>Ascent</span>
+                                        </a>
+                                        <div aria-label="Close menu"></div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <span>Home</span>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Home-1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Home-2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Services</span>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Services</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Service Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Blog</span>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Blog</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Blog Details</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span>Page</span>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">About</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Services</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Service Details</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Portfolio</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Faq\'s</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Contact</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#contact">Contact Us</a>
+                                        </li>
+                                    </ul>
+
+                                    <!-- contact info start -->
+                                    <div>
+                                        <div>
+                                            <h4>Contact Info</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="tel:6295550129">
+                                                        (629) 555-0129
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="mailto:info@example.com"> 
+                                                        info@example.com
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <p> 
+                                                        6391 Elgin St. Celina, 10299
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="#contact" class="btn"> Get A Quote </a>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                            <li><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- contact info end -->
+                                </nav>
+                            </div>
+                            <!-- tab and mobile navbanr end -->
+
+                            <!-- search, toggle and contact btn start -->
+                            <div>
+                                
+                                <!-- <p></p> -->
+                                <a href="#contact" class="btn"> Get A Quote </a>
+                                <div>
+                                    <div>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- search, toggle and contact btn end -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bottom header -->
+        </div>
     </header>
 
-    <!-- ==========================================================================
-         MỤC 2: HERO / BANNER SECTION
-         ========================================================================== -->
-    <section id="banner">
-      <div>
-        <span>Kindergarten Program</span>
-        <h1>Exploring Minds Elementary School</h1>
-        <p>
-          Starting a corporate business typically involves several steps, such
-          as developing a business plan, securing financing, registering your
-          business, and finding the right location.
-        </p>
-        <div>
-          <a href="#contact">Get A Quote</a>
-          <a href="#contact">Contact Us</a>
-        </div>
-      </div>
-      <div>
-        <img src="images/banner/boy_img_1.png" alt="banner student 1" />
-        <img src="images/banner/boy_img_2.png" alt="banner student 2" />
-      </div>
-    </section>
+    <!-- PART 1 - SECTION 2: HERO BANNER SECTION -->
+    <!-- banner section start -->
+    <section id="home">
+        <div class="container">
+            <div>
+                <h1> 
+                    <span>Exploring Minds <span><i class="icon-three-line"></i></span></span>
+                    <span>Elementary</span> <span>School</span>
+                </h1>
 
-    <!-- ==========================================================================
-         MỤC 3: FEATURES / HIGHLIGHTS SECTION (4 khối tính năng)
-         ========================================================================== -->
-    <section id="features">
-      <h2>Features</h2>
-      <div>
-        <div>
-          <img src="images/extra-curricula/img-1.png" alt="Toddler Classes" />
-          <h3>Toddler Classes</h3>
-          <p>
-            Developing a business plan, securing financing, registering your
-            business.
-          </p>
-        </div>
-        <div>
-          <img src="images/extra-curricula/img-2.png" alt="Play Way Program" />
-          <h3>Play Way Program</h3>
-          <p>
-            Developing a business plan, securing financing, registering your
-            business.
-          </p>
-        </div>
-        <div>
-          <img src="images/extra-curricula/img-3.png" alt="Kindergarten" />
-          <h3>Kindergarten</h3>
-          <p>
-            Developing a business plan, securing financing, registering your
-            business.
-          </p>
-        </div>
-        <div>
-          <img src="images/extra-curricula/img-1.png" alt="Early Childhood" />
-          <h3>Early Childhood</h3>
-          <p>
-            Developing a business plan, securing financing, registering your
-            business.
-          </p>
-        </div>
-      </div>
-    </section>
+                <div>
+                    <img src="images/shapes/shap.png" alt="shap-2">
+                    <img src="images/shapes/shap.png" alt="shap-1">
+                    <img src="images/shapes/shap.png" alt="shap-2">
+                </div>
 
-    <!-- ==========================================================================
-         MỤC 4: ABOUT US SECTION (Giới thiệu trường học, Mission & Vision)
-         ========================================================================== -->
+                <p>Starting a corporate business typically involves several steps, such as
+                    develo a business</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div>
+                <img src="images/banner/boy_img_1.png" alt="banner-img-1">
+                <span></span>
+            </div>
+
+            <div>
+                <img src="images/banner/boy_img_2.png" alt="banner-img-2">
+                <span></span>
+            </div>
+
+            <div>
+                <img src="images/banner/painting.png" alt="painting">
+            </div>
+        </div>
+        <!-- circle shap -->
+        <div>
+            <div>
+                <img src="images/banner/left-circle-1.png" alt="img">
+            </div>
+            <div>
+                <img src="images/banner/left-circle-2.png" alt="img">
+            </div>
+            <div>
+                <img src="images/banner/right-circle.png" alt="img">
+            </div>
+        </div>
+        <!-- circle shap -->
+    </section>
+    <!-- banner section end -->
+
+    <!-- PART 1 - SECTION 3: COUNTER SECTION - NUMBER TALKS -->
+    <!-- counter start -->
+    <section id="counter">
+        <div class="container">
+            <div>
+                <!-- left side start -->
+                <div>
+                    <p>Number Talks</p>
+                    <h2 data-wow-delay=".3s">Invest in education invest in the future</h2>
+                    <p data-wow-delay=".3s">Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum</p>
+                    <button class="btn">Get a quote</button>
+                </div>
+                <!-- left side end -->
+
+                <!-- right side start -->
+                <div>
+                    <!-- card -->
+                    <div data-wow-delay=".3s">
+                        <div>
+                            <i class="icon-kindergarden"></i>
+                        </div>
+                        <div>
+                            <h4>20K</h4>
+                            <p>Running Students</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <!-- card -->
+                    <div data-wow-delay=".3s">
+                        <div>
+                            <i class="icon-book"></i>
+                        </div>
+                        <div>
+                            <h4>13K</h4>
+                            <p>Completed</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <!-- card -->
+                    <div data-wow-delay=".3s">
+                        <div>
+                            <i class="icon-blocks"></i>
+                        </div>
+                        <div>
+                            <h4>3K</h4>
+                            <p>Award Winning</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <!-- card -->
+                    <div data-wow-delay=".3s">
+                        <div>
+                            <i class="icon-book"></i>
+                        </div>
+                        <div>
+                            <h4>13K</h4>
+                            <p>Guardian Satishfaction</p>
+                        </div>
+                    </div>
+                    <!-- card -->
+
+                </div>
+                <!-- right side end -->
+            </div>
+        </div>
+    </section>
+    <!-- counter end -->
+
+    <!-- PART 1 - SECTION 4: ABOUT US SECTION -->
+    <!-- about section start -->
     <section id="about">
-      <div>
-        <img src="images/about/about-1.png" alt="About Us" />
-      </div>
-      <div>
-        <span>About Us</span>
-        <h2>Discover Our School Experience</h2>
-        <p>
-          Starting a corporate business typically involves several steps, such
-          as developing a business plan, securing financing, registering your
-          business, and finding the right location.
-        </p>
-        <div>
-          <div>
-            <h4>Our Mission</h4>
-            <p>Building strong foundations for lifelong learning.</p>
-          </div>
-          <div>
-            <h4>Our Vision</h4>
-            <p>Empowering children to realize their full potential.</p>
-          </div>
+        <div class="container">
+            <div>
+                <div>
+                    <div>
+                        <div data-wow-delay=".5s">
+                            <div>
+                                <img src="images/about/shap-1.png" alt="shap">
+                            </div>
+                            <div>
+                                <img src="images/about/about-1.png" alt="about-bg">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="images/about/icreement.png" alt="icreement">
+                                <h6>Academy</h6>
+                                <p>Learning Ladder School</p>
+                            </div>
+                            <div>
+                                <h6>10+</h6>
+                                <p>Learning Ladder School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- right side start -->
+                <div>
+                    <p>About Us</p>
+                    <h2 data-wow-delay=".3s">Unlocking Potential, One Child at a just Time in school</h2>
+                    <p data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet
+                        massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
+                        lectus mi ultricies dictum</p>
+                    <a href="#contact" class="btn">Get a quote</a>
+                </div>
+                <!-- right side end -->
+            </div>
         </div>
-        <a href="#about">Read More</a>
-      </div>
     </section>
+    <!-- about section end -->
 
-    <!-- ==========================================================================
-         MỤC 5: PROGRAMS / CLASSES SECTION (4 thẻ lớp học)
-         ========================================================================== -->
+    <!-- PART 1 - SECTION 5: EDUCATIONAL PROGRAMS SECTION -->
+    <!-- programs section start -->
     <section id="programs">
-      <div>
-        <span>Our Classes</span>
-        <h2>Top Notch Educational Programs</h2>
-      </div>
-      <div>
-        <div>
-          <img src="images/extra-curricula/img-1.png" alt="Online Class" />
-          <h3>Online Class</h3>
-          <p>Interactive lessons and creative projects for young learners.</p>
-          <a href="#">Read More</a>
-        </div>
-        <div>
-          <img src="images/extra-curricula/img-2.png" alt="Formal Tuition" />
-          <h3>Formal Tuition</h3>
-          <p>Structured curriculum taught by experienced educators.</p>
-          <a href="#">Read More</a>
-        </div>
-        <div>
-          <img src="images/extra-curricula/img-3.png" alt="Preschool" />
-          <h3>Preschool</h3>
-          <p>Play-based foundational skills in reading and math.</p>
-          <a href="#">Read More</a>
-        </div>
-        <div>
-          <img src="images/extra-curricula/img-1.png" alt="Special Tuition" />
-          <h3>Special Tuition</h3>
-          <p>Individualized attention for customized academic growth.</p>
-          <a href="#">Read More</a>
-        </div>
-      </div>
-    </section>
+        <div class="container">
+            <div>
+                <p>Educational Programs</p>
+                <h2 data-wow-delay=".3s">Strong Foundation for Success For Nurturing Curiosityl</h2>
+            </div>
+            <div>
+                <div>
+                    <!-- card start -->
+                    <div data-wow-delay=".3s">
+                        <div>
+                            <i class="icon-car-toy"></i>
+                        </div>
+                        <div>
+                            <h4>
+                                <a href="#services">Online Class</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat </p>
+                            <a href="#services">
+                                <span>Read More</span> 
+                                
+                            </a>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                    <!-- card start -->
+                    <div data-wow-delay=".4s">
+                        <div>
+                            <i class="icon-toys"></i>
+                        </div>
+                        <div>
+                            <h4>
+                                <a href="#services">Formal Tuition</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat </p>
+                            <a href="#services">
+                                <span>Read More</span> 
+                                
+                            </a>
+                        </div>
+                    </div>
+                    <!-- card end -->
 
-    <!-- ==========================================================================
-         MỤC 6: LATEST PORTFOLIO SECTION (Bộ lọc và thư viện ảnh)
-         ========================================================================== -->
+                    <!-- card start -->
+                    <div data-wow-delay=".5s">
+                        <div>
+                           <i class="icon-feeder"></i>
+                        </div>
+                        <div>
+                            <h4>
+                                <a href="#services">Preschool</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat </p>
+                            <a href="#services">
+                                <span>Read More</span> 
+                                
+                            </a>
+                        </div>
+                    </div>
+                    <!-- card end -->
+
+                    <!-- card start -->
+                    <div data-wow-delay=".6s">
+                        <div>
+                            <i class="icon-book"></i>
+                        </div>
+                        <div>
+                            <h4>
+                                <a href="#services">Special Tuition</a>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat </p>
+                            <a href="#services">
+                                <span>Read More</span> 
+                                
+                            </a>
+                        </div>
+                    </div>
+                    <!-- card end -->
+                </div>
+            </div>
+        </div>
+        <!-- shap start -->
+        <div>
+            <img src="images/shapes/pencil-rocket.png" alt="pencil">
+        </div>
+        <!-- shap end -->
+    </section>
+    <!-- programs section end -->
+
+    <!-- PART 1 - SECTION 6: PORTFOLIO SECTION -->
+    <!-- Portfolio section start -->
     <section id="portfolio">
-      <div>
-        <span>Our Gallery</span>
-        <h2>Latest Portfolio & Activities</h2>
-      </div>
-      <ul>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">School</a></li>
-        <li><a href="#">Learn</a></li>
-        <li><a href="#">Child</a></li>
-        <li><a href="#">Coaching</a></li>
-      </ul>
-      <div>
-        <div>
-          <img src="images/portfolio/portfolio-1.png" alt="Gallery 1" />
-          <h4>Creative Painting</h4>
-        </div>
-        <div>
-          <img src="images/portfolio/portfolio-2.png" alt="Gallery 2" />
-          <h4>Outdoor Playground</h4>
-        </div>
-        <div>
-          <img src="images/portfolio/portfolio-3.png" alt="Gallery 3" />
-          <h4>Reading Club</h4>
-        </div>
-        <div>
-          <img src="images/portfolio/portfolio-4.png" alt="Gallery 4" />
-          <h4>Science Exploration</h4>
-        </div>
-        <div>
-          <img src="images/portfolio/portfolio-5.png" alt="Gallery 5" />
-          <h4>Music & Movement</h4>
-        </div>
-        <div>
-          <img src="images/portfolio/portfolio-6.png" alt="Gallery 6" />
-          <h4>Math Games</h4>
-        </div>
-      </div>
-    </section>
+        <div class="container">
+            <div>
+                <p>Latest Portfolio</p>
+                <h2 data-wow-delay=".3s">Exploring Minds Elementary School Education the only school</h2>
+            </div>
+            <div>
+                <!-- HTML5 - CSS3 Tabs -->
+                <input type="radio" name="port_tab" id="tab-education" checked>
+                <input type="radio" name="port_tab" id="tab-school">
+                <input type="radio" name="port_tab" id="tab-learn">
+                <input type="radio" name="port_tab" id="tab-child">
+                <input type="radio" name="port_tab" id="tab-coaching">
 
-    <!-- ==========================================================================
-         MỤC 7: SERVICES SLIDER SECTION (Dịch vụ & tiện ích)
-         ========================================================================== -->
+                <div class="tab-list">
+                    <label for="tab-education">Education</label>
+                    <label for="tab-school">School</label>
+                    <label for="tab-learn">Learn</label>
+                    <label for="tab-child">Child</label>
+                    <label for="tab-coaching">Coaching</label>
+                </div>
+                <div class="portfolio-cards" data-wow-delay=".3s">
+                    <!-- group one -->
+                    <div data-target="education" class="target-card card-edu">
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-1.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-2.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-3.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-5.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-6.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                    </div>
+                    <!-- group one -->
+                    <!-- group two -->
+                    <div data-target="school" class="target-card">
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-1.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-2.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-3.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-5.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                    </div>
+                    <!-- group two -->
+                    <!-- group three -->
+                    <div data-target="learn" class="target-card">
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-3.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-5.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                    </div>
+                    <!-- group three -->
+                    <!-- group four -->
+                    <div data-target="child" class="target-card">
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-1.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-2.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                    </div>
+                    <!-- group four -->
+                    <!-- group five -->
+                    <div data-target="coaching" class="target-card">
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-1.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-2.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-3.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-5.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                        <!-- card start -->
+                        <div>
+                            <img src="images/portfolio/portfolio-6.png" alt="img">
+                            <div>
+                                <h5><a href="#">Exploring Minds Elementary  Best School</a></h5>
+                                <p>Dreamland Elementary</p>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <!-- card end -->
+                    </div>
+                    <!-- group five -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio section end -->
+
+    <!-- PART 1 - SECTION 7: SERVICES SECTION & SWIPER CAROUSEL -->
+    <!-- Service section start -->
     <section id="services">
-      <div>
-        <span>Services</span>
-        <h2>What We Offer For Children</h2>
-      </div>
-      <div>
-        <div>
-          <img src="images/shapes/service-1.png" alt="Stars Preschool" />
-          <h3>Stars Preschool</h3>
-          <p>
-            Comprehensive preschool education designed for early milestones.
-          </p>
-        </div>
-        <div>
-          <img src="images/shapes/service-2.png" alt="Learning School" />
-          <h3>Learning School</h3>
-          <p>Engaging classroom environments with expert guided activities.</p>
-        </div>
-        <div>
-          <img src="images/shapes/service-3.png" alt="Kindergarten Care" />
-          <h3>Kindergarten Care</h3>
-          <p>Safe and nurturing daycare support for working parents.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         MỤC 8: FAQ SECTION (Câu hỏi thường gặp)
-         ========================================================================== -->
-    <section id="faq" class="lg:pb-15 pb-10 container-for-me py-6">
-      <div class="container">
-        <div class="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5">
-          <div class="max-w-[528px] lg:max-w-full mx-auto">
-            <img src="/images/faq/banner-1.png" alt="child with laptop" />
-          </div>
-          <div>
-            <div class="lg:max-w-[520px] pb-10">
-              <p
-                class="text-teal-400 font-bubblegum-sans text-[19px] wow fadeInUp"
-              >
-                Some FAQ
-              </p>
-              <h2
-                class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
-                data-wow-delay=".3s"
-              >
-                Frequently Asked Questions
-              </h2>
-            </div>
-            <!-- according start -->
-            <!-- Bọc ngoài cùng để tạo khoảng cách giữa các thẻ -->
-            <div class="max-w-4xl space-y-4 p-4">
-              <div
-                id="accordion-flush"
-                data-accordion="collapse"
-                data-active-classes="bg-white"
-                data-inactive-classes="bg-white"
-              >
-                <!-- Thẻ FAQ 1 -->
-                <div
-                  class="bg-white border border-gray-200 rounded-xl shadow-sm"
-                >
-                  <h2 id="accordion-heading-1">
-                    <button
-                      type="button"
-                      class="group flex items-center justify-between w-full p-5 font-bold text-left rtl:text-right text-gray-900 rounded-xl hover:bg-gray-50 focus:outline-none transition-colors gap-3"
-                      data-accordion-target="#accordion-body-1"
-                      aria-expanded="false"
-                      aria-controls="accordion-body-1"
-                    >
-                      <span
-                        class="font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%]"
-                        >What age groups do you accept?</span
-                      >
-
-                      <!-- Khối vuông màu xanh chứa Icon -->
-                      <span
-                        class="flex items-center justify-center w-9 h-9 bg-blue-500 rounded-lg shrink-0 text-white shadow-sm transition-transform"
-                      >
-                        <!-- Icon dấu cộng (Hiện khi đóng) -->
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="w-5 h-5 block group-aria-expanded:hidden"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 4.5v15m7.5-7.5h-15"
-                          />
-                        </svg>
-                        <!-- Icon dấu trừ (Hiện khi mở) -->
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="w-5 h-5 hidden group-aria-expanded:block"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M19.5 12h-15"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="accordion-body-1"
-                    class="hidden"
-                    aria-labelledby="accordion-heading-1"
-                  >
-                    <div class="p-5 border-t border-gray-100 text-gray-600">
-                      <p>
-                        We welcome children from 18 months up to 6 years old in
-                        our tailored programs.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Thẻ FAQ 2 -->
-                <div
-                  class="bg-white border border-gray-200 rounded-xl shadow-sm mt-[30px]"
-                >
-                  <h2 id="accordion-heading-2">
-                    <button
-                      type="button"
-                      class="group flex items-center justify-between w-full p-5 font-bold text-left rtl:text-right text-gray-900 rounded-xl hover:bg-gray-50 focus:outline-none transition-colors gap-3"
-                      data-accordion-target="#accordion-body-2"
-                      aria-expanded="false"
-                      aria-controls="accordion-body-2"
-                    >
-                      <span
-                        class="font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%]"
-                        >What is the student-to-teacher ratio?</span
-                      >
-
-                      <span
-                        class="flex items-center justify-center w-9 h-9 bg-blue-500 rounded-lg shrink-0 text-white shadow-sm transition-transform"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="w-5 h-5 block group-aria-expanded:hidden"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 4.5v15m7.5-7.5h-15"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="w-5 h-5 hidden group-aria-expanded:block"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M19.5 12h-15"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="accordion-body-2"
-                    class="hidden"
-                    aria-labelledby="accordion-heading-2"
-                  >
-                    <div class="p-5 border-t border-gray-100 text-gray-600">
-                      <p>
-                        Our average ratio is 1 teacher for every 6 to 8 students
-                        to ensure individualized care.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Thẻ FAQ 3 -->
-                <div
-                  class="bg-white border border-gray-200 rounded-xl shadow-sm mt-[30px]"
-                >
-                  <h2 id="accordion-heading-3">
-                    <button
-                      type="button"
-                      class="group flex items-center justify-between w-full p-5 font-bold text-left rtl:text-right text-gray-900 rounded-xl hover:bg-gray-50 focus:outline-none transition-colors gap-3"
-                      data-accordion-target="#accordion-body-3"
-                      aria-expanded="false"
-                      aria-controls="accordion-body-3"
-                    >
-                      <span
-                        class="font-bold lg:text-xl text-[17px] lg:leading-[130%] leading-[120%]"
-                        >Why do we have to go to school?</span
-                      >
-
-                      <span
-                        class="flex items-center justify-center w-9 h-9 bg-blue-500 rounded-lg shrink-0 text-white shadow-sm transition-transform"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="w-5 h-5 block group-aria-expanded:hidden"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M12 4.5v15m7.5-7.5h-15"
-                          />
-                        </svg>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="2.5"
-                          stroke="currentColor"
-                          class="w-5 h-5 hidden group-aria-expanded:block"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M19.5 12h-15"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                  </h2>
-                  <div
-                    id="accordion-body-3"
-                    class="hidden"
-                    aria-labelledby="accordion-heading-3"
-                  >
-                    <div class="p-5 border-t border-gray-100 text-gray-600">
-                      <p>Nội dung câu trả lời của bạn ở đây...</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- according end -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ==========================================================================
-         MỤC 9: MEET OUR PROFESSIONAL (Đội ngũ giáo viên / nhân sự)
-         ========================================================================== -->
-    <section
-      id="teachers"
-      class="lg:pt-15 lg:pb-15 pt-10 pb-10 container-for-me py-6"
-    >
-      <div class="container">
-        <div class="text-center flex flex-col items-center">
-          <p class="text-teal-400 font-bubblegum-sans text-[19px] wow fadeInUp">
-            Meet Our Professional
-          </p>
-          <h2
-            class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] lg:max-w-[520px] wow fadeInUp"
-            data-wow-delay=".3s"
-          >
-            Joyful Journeys Childcare and the Of a Education
-          </h2>
-        </div>
-        <div class="lg:pt-15 pt-10">
-          <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
-            <!-- card start -->
-            <div
-              class="bg-background shadow-2xl border-2 border-transparent hover:border-green-500 transition-all duration-500 flex justify-center lg:p-10 p-7 rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] max-w-[410px] mx-auto group/team"
-            >
-              <div>
+        <div class="container">
+            <div>
                 <div>
-                  <img
-                    src="/images/team/professonal1.png"
-                    alt="team-1"
-                    class="rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover/team:rounded-tr-[50px] group-hover/team:rounded-bl-[50px] group-hover/team:rounded-tl-[10px] group-hover/team:rounded-br-[10px] transition-all duration-500"
-                  />
+                    <div>
+                        <p>Latest Service</p>
+                        <h2 data-wow-delay=".3s">Building a Str Foundation for Success</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit platea pharetra, nostra mattis hendrerit proin mollis pretium facilisi in, ligula volutpat </p>
+                    </div>
+                    
                 </div>
-                <div class="pt-7.5">
-                  <h4 class="leading-[141%]">
-                    <a href="#" class="text-2xl font-medium">Jane Cooper</a>
-                  </h4>
-                  <p class="pt-1">Marketing Coordinator</p>
-                  <ul class="flex items-center gap-5 pt-7.5">
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-x-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-linkedin"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-pinterest-p"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- card start -->
-
-            <!-- card start -->
-            <div
-              class="bg-background shadow-2xl border-2 border-transparent hover:border-green-500 transition-all duration-500 flex justify-center lg:p-10 p-7 rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] max-w-[410px] mx-auto group/team"
-            >
-              <div>
                 <div>
-                  <img
-                    src="/images/team/professonal2.png"
-                    alt="team-2"
-                    class="rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover/team:rounded-tr-[50px] group-hover/team:rounded-bl-[50px] group-hover/team:rounded-tl-[10px] group-hover/team:rounded-br-[10px] transition-all duration-500"
-                  />
-                </div>
-                <div class="pt-7.5">
-                  <h4 class="leading-[141%]">
-                    <a href="#" class="text-2xl font-medium">Eleanor Pena</a>
-                  </h4>
-                  <p class="pt-1">Lead Kindergarten Teacher</p>
-                  <ul class="flex items-center gap-5 pt-7.5">
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-x-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-linkedin"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-pinterest-p"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- card start -->
-
-            <!-- card start -->
-            <div
-              class="bg-background shadow-2xl border-2 border-transparent hover:border-green-500 transition-all duration-500 flex justify-center lg:p-10 p-7 rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] max-w-[410px] mx-auto group/team"
-            >
-              <div>
-                <div>
-                  <img
-                    src="/images/team/professonal3.png"
-                    alt="team-3"
-                    class="rounded-tl-[50px] rounded-br-[50px] rounded-tr-[10px] rounded-bl-[10px] group-hover/team:rounded-tr-[50px] group-hover/team:rounded-bl-[50px] group-hover/team:rounded-tl-[10px] group-hover/team:rounded-br-[10px] transition-all duration-500"
-                  />
-                </div>
-                <div class="pt-7.5">
-                  <h4 class="leading-[141%]">
-                    <a href="#" class="text-2xl font-medium">Guy Hawkins</a>
-                  </h4>
-                  <p class="pt-1">Creative Arts Instructor</p>
-                  <ul class="flex items-center gap-5 pt-7.5">
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-facebook-f"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-x-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-linkedin"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-50 hover:text-amber-950 hover:bg-red-500 transition-all duration-500"
-                        ><i class="fa-brands fa-pinterest-p"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- card start -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ==========================================================================
-         MỤC 10: STUDENT AGE / STATISTICS SECTION (Thống kê độ tuổi học sinh)
-         ========================================================================== -->
-    <section
-      id="statistics"
-      class="bg-[#fff8f3] py-16 lg:py-24 relative overflow-hidden"
-    >
-      <div class="container-for-me py-6">
-        <!-- Hình cái cây bên trái -->
-        <div class="absolute left-0 bottom-0 z-0 xl:block hidden">
-          <img
-            src="/images/shapes/knowledge-lshpe.png"
-            alt="tree"
-            class="max-w-[150px]"
-          />
-        </div>
-
-        <div class="container mx-auto relative z-10">
-          <div
-            class="grid lg:grid-cols-2 grid-cols-1 items-center gap-12 xl:gap-20 ml-[20px]"
-          >
-            <!-- LEFT SIDE: Nội dung chữ -->
-            <div class="lg:max-w-[500px] mr-3">
-              <p
-                class="text-[#12b8a6] font-bubblegum-sans text-lg font-semibold mb-3 wow fadeInUp"
-              >
-                Student knowledge
-              </p>
-              <h2
-                class="font-extrabold lg:text-[40px] md:text-[32px] text-3xl lg:leading-[1.2] text-gray-900 mb-6 wow fadeInUp"
-                data-wow-delay=".3s"
-              >
-                Knowledge for All learn design Excellence for Everyone
-              </h2>
-              <p
-                class="text-gray-600 text-lg mb-8 wow fadeInUp"
-                data-wow-delay=".4s"
-              >
-                Lorem ipsum dolor sit amet consectetur adipiscing elit platea
-                the osr of a proin mollis pretium facilisi in, ligula volutpat
-              </p>
-              <a
-                href=""
-                class="rounded-full px-8 py-3.5 bg-[#f03e3e] text-white hover:bg-[#d12f2f] transition-colors duration-300 inline-block text-center font-semibold shadow-md hover:shadow-lg"
-              >
-                Learn More
-              </a>
-            </div>
-
-            <!-- RIGHT SIDE: Các khối màu -->
-            <div
-              class="relative flex justify-center lg:justify-end mt-10 lg:mt-0"
-            >
-              <!-- Hình con rùa (Đặt absolute để nằm góc trên bên phải) -->
-              <div
-                class="absolute -top-16 right-0 md:right-10 lg:-top-20 lg:-right-8 w-32 lg:w-48 z-20 animate-float-x"
-              >
-                <img src="/images/shapes/knowledge-animal.png" alt="animal" />
-              </div>
-
-              <!-- Layout 3 cột dùng Flexbox để xếp tầng -->
-              <div class="flex items-start gap-4 md:gap-6 relative z-10">
-                <!-- Cột 1 -->
-                <div class="flex flex-col gap-4 md:gap-6 mt-12 md:mt-16">
-                  <!-- 1-2 Years (Khối cao) -->
-                  <div
-                    class="bg-[#066a7c] rounded-2xl w-[100px] md:w-[130px] lg:w-[160px] h-[150px] md:h-[190px] lg:h-[220px] flex items-center justify-center p-2 shadow-sm"
-                  >
-                    <h5
-                      class="font-nunito text-white text-lg md:text-2xl lg:text-3xl font-bold text-center leading-tight"
-                    >
-                      1-2 <br />
-                      Years
-                    </h5>
-                  </div>
-                  <!-- 9-11 Years (Khối vuông) -->
-                  <div
-                    class="bg-[#f59e0b] rounded-2xl w-[100px] md:w-[130px] lg:w-[160px] h-[100px] md:h-[130px] lg:h-[160px] flex items-center justify-center p-2 shadow-sm"
-                  >
-                    <h5
-                      class="font-nunito text-white text-lg md:text-2xl lg:text-3xl font-bold text-center leading-tight"
-                    >
-                      9-11 <br />
-                      Years
-                    </h5>
-                  </div>
-                </div>
-
-                <!-- Cột 2 -->
-                <div class="flex flex-col gap-4 md:gap-6">
-                  <!-- 3-5 Years -->
-                  <div
-                    class="bg-[#12b8a6] rounded-2xl w-[100px] md:w-[130px] lg:w-[160px] h-[100px] md:h-[130px] lg:h-[160px] flex items-center justify-center p-2 shadow-sm"
-                  >
-                    <h5
-                      class="font-nunito text-white text-lg md:text-2xl lg:text-3xl font-bold text-center leading-tight"
-                    >
-                      3-5 <br />
-                      Years
-                    </h5>
-                  </div>
-                  <!-- 6-8 Years -->
-                  <div
-                    class="bg-[#f01f75] rounded-2xl w-[100px] md:w-[130px] lg:w-[160px] h-[100px] md:h-[130px] lg:h-[160px] flex items-center justify-center p-2 shadow-sm"
-                  >
-                    <h5
-                      class="font-nunito text-white text-lg md:text-2xl lg:text-3xl font-bold text-center leading-tight"
-                    >
-                      6-8 <br />
-                      Years
-                    </h5>
-                  </div>
-                  <!-- 16-18 Years -->
-                  <div
-                    class="bg-[#69c84c] rounded-2xl w-[100px] md:w-[130px] lg:w-[160px] h-[100px] md:h-[130px] lg:h-[160px] flex items-center justify-center p-2 shadow-sm"
-                  >
-                    <h5
-                      class="font-nunito text-white text-lg md:text-2xl lg:text-3xl font-bold text-center leading-tight"
-                    >
-                      16-18 <br />
-                      Years
-                    </h5>
-                  </div>
-                </div>
-
-                <!-- Cột 3 -->
-                <div
-                  class="flex flex-col gap-4 md:gap-6 mt-[116px] md:mt-[154px] lg:mt-[184px]"
-                >
-                  <!-- 12-15 Years -->
-                  <div
-                    class="bg-[#fb8c00] rounded-2xl w-[100px] md:w-[130px] lg:w-[160px] h-[100px] md:h-[130px] lg:h-[160px] flex items-center justify-center p-2 shadow-sm"
-                  >
-                    <h5
-                      class="font-nunito text-white text-lg md:text-2xl lg:text-3xl font-bold text-center leading-tight"
-                    >
-                      12-15 <br />
-                      Years
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         MỤC 11: CLIENTS TESTIMONIAL (Cảm nhận của phụ huynh)
-         ========================================================================== -->
-    <section
-      id="testimonial"
-      class="lg:pt-15 lg:pb-15 pt-10 pb-10 container-for-me py-6"
-    >
-      <div class="container">
-        <div
-          class="flex lg:flex-row flex-col justify-between lg:items-center gap-4 lg:pb-15 pb-10"
-        >
-          <div class="lg:max-w-[410px]">
-            <p
-              class="text-teal-400 font-bubblegum-sans text-[19px] wow fadeInUp"
-            >
-              Testimonials
-            </p>
-            <h2
-              class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
-              data-wow-delay=".3s"
-            >
-              What Parents Say About Us
-            </h2>
-          </div>
-          <p class="lg:max-w-[410px] text-[#686868]">
-            "Ascent has provided an amazing nurturing environment for our
-            daughter. Her confidence and curiosity have grown tremendously since
-            joining!"
-          </p>
-        </div>
-        <div
-          class="relative w-full h-full after:absolute after:left-0 after:top-0 after:lg:max-w-[calc(100%-410px)] after:md:max-w-[calc(100%-310px)] after:max-w-[calc(100%-100px)] after:w-full after:h-full after:bg-[url(/images/testimonial/bg-img.png)] after:bg-cover after:bg-no-repeat after:z-[-1]"
-        >
-          <div class="py-10 grid justify-items-end">
-            <div class="swiper max-w-[630px] w-full">
-              <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <!-- card start -->
-                    <div class="lg:p-10 sm:p-8 py-8 sm:py-0 sm:-mr-10">
-                      <div
-                        class="bg-white/80 border border-[#F2F2F2] lg:p-15 md:p-5 p-3 max-w-[630px] w-full rounded-[10px] ml-auto shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)]"
-                      >
-                        <div
-                          class="flex justify-between items-center relative z-10 lg:pb-7.5 pb-5"
-                        >
-                          <div class="flex items-center gap-5">
-                            <img
-                              src="/images/testimonial/user-1.png"
-                              alt="bg-img"
-                            />
+                    <div>
+                        <div>
+                            <div class="service-pagination"></div>
                             <div>
-                              <h5
-                                class="md:text-2xl text-xl font-semibold md:leading-[140%]"
-                              >
-                                Shakib Al Hasan
-                              </h5>
-                              <p>Parent of Grade 1 Student</p>
+                                <a href="#" class="btn">Read More </a>
                             </div>
-                          </div>
-                          <div class="absolute right-0 z-[-1]">
-                            <img
-                              src="/images/testimonial/quotation.png"
-                              alt="quotation"
-                              class="lg:w-auto w-9"
-                            />
-                          </div>
                         </div>
-                        <p>
-                          Their product exceeded his my routi expectations. The
-                          the quality and attention to detail a the a most
-                          outstanding and it has become an essential most a
-                          education the man who can do
-                        </p>
-                        <ul class="flex items-center gap-1 lg:pt-10 pt-5">
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i
-                              class="fa-regular fa-star text-slate-500 opacity-30 text-xl"
-                            ></i>
-                          </li>
-                        </ul>
-                      </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="swiper service-swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- card start -->
+                                    <div class="swiper-slide">
+                                        <div class="service-card">
+                                            <i class="icon-mat"></i>
+                                            <h4><a href="#services">Learning School heres us</a></h4> 
+                                            <div class="card-footer">
+                                                <p>Lorem ipsum dolor sit amet a the a conse adipiscing </p>
+                                                <a href="#services">
+                                                    <span>Read More</span> 
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card end -->
+                                    <!-- card start -->
+                                    <div class="swiper-slide">
+                                        <div class="service-card">
+                                            <i class="icon-baby-body"></i>
+                                            <h4><a href="#services">Learning in the School</a></h4> 
+                                            <div class="card-footer">
+                                                <p>Lorem ipsum dolor sit amet a the a conse adipiscing </p>
+                                                <a href="#services">
+                                                    <span>Read More</span> 
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card end -->
+                                    <!-- card start -->
+                                    <div class="swiper-slide">
+                                        <div class="service-card">
+                                            <i class="icon-teddy-bear"></i>
+                                            <h4><a href="#services">Stars Preschool our design</a></h4> 
+                                            <div class="card-footer">
+                                                <p>Lorem ipsum dolor sit amet a the a conse adipiscing </p>
+                                                <a href="#services">
+                                                    <span>Read More</span> 
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card end -->
+                                    <!-- card start -->
+                                    <div class="swiper-slide">
+                                        <div class="service-card">
+                                            <i class="icon-mat"></i>
+                                            <h4><a href="#services">Stars Preschool our design</a></h4> 
+                                            <div class="card-footer">
+                                                <p>Lorem ipsum dolor sit amet a the a conse adipiscing </p>
+                                                <a href="#services">
+                                                    <span>Read More</span> 
+                                                    
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- card end -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- shap start -->
+        <div>
+            <img src="images/shapes/man.png" alt="img">
+        </div>
+        <!-- shap end -->
+    </section>
+    <!-- Service section end -->
+    <!-- END PART 1: DEV 1 -->
+
+
+    <!-- PART 2: DEV 2 (FAQ TO FOOTER) -->
+    <!-- PART 2 - SECTION 1: FAQ ACCORDION SECTION -->
+    <!-- Faq section start -->
+    <section id="faq">
+        <div class="container">
+            <div>
+                <div>
+                    <img src="images/faq/banner-1.png" alt="child with laptop">
+                </div>
+                <div>
+                    <div>
+                        <p>Some Faq</p>
+                        <h2 data-wow-delay=".3s">Empowering Children Through Education Playful Mind</h2>
+                    </div>
+                    <!-- according start -->
+                    <div class="according-item active-accor" data-open="true">
+                        <div class="according-btn">
+                            <h4>Why do we have to go to school?</h4>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-details">
+                            <div>
+                                <p>It is a long established fact that a reader will be distracted by the read content of a page when looking at its layout. Many desktop publish packages and web page editors now use Loremdefault model</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- according end -->
+                    <!-- according start -->
+                    <div class="according-item" data-open="false">
+                        <div class="according-btn">
+                            <h4>Why do we have to go to school?</h4>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-details">
+                            <div>
+                                <p>It is a long established fact that a reader will be distracted by the read content of a page when looking at its layout. Many desktop publish packages and web page editors now use Loremdefault model</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- according end -->
+                    <!-- according start -->
+                    <div class="according-item" data-open="false">
+                        <div class="according-btn">
+                            <h4>Why do we have to go to school?</h4>
+                            <span class="icon"></span>
+                        </div>
+                        <div class="accordion-details">
+                            <div>
+                                <p>It is a long established fact that a reader will be distracted by the read content of a page when looking at its layout. Many desktop publish packages and web page editors now use Loremdefault model</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- according end -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq section end -->
+
+    <!-- PART 2 - SECTION 2: TEAM SECTION - PROFESSIONAL TEACHERS -->
+    <!-- Team section start -->
+    <section id="team">
+        <div class="container">
+            <div>
+                <p>Meet Our Professional</p>
+                <h2 data-wow-delay=".3s">Joyful Journeys Childcare and the Of a Education</h2>
+            </div>
+            <div>
+                <div>
+                    <!-- card start -->
+                    <div>
+                        <div>
+                            <div>
+                                <img src="images/team/professonal1.png" alt="team-1">
+                            </div>
+                            <div>
+                                <h4><a href="#">Jane Cooper</a></h4>
+                                <p>Marketing Coordinator</p>
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <!-- card end -->
-                  </div>
-                  <div class="swiper-slide">
-                    <!-- card start -->
-                    <div class="lg:p-10 sm:p-8 py-8 sm:py-0 sm:-mr-10">
-                      <div
-                        class="bg-white/80 border border-[#F2F2F2] lg:p-15 md:p-5 p-3 max-w-[630px] w-full rounded-[10px] ml-auto shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)]"
-                      >
-                        <div
-                          class="flex justify-between items-center relative z-10 lg:pb-7.5 pb-5"
-                        >
-                          <div class="flex items-center gap-5">
-                            <img
-                              src="/images/testimonial/user-1.png"
-                              alt="bg-img"
-                            />
+
+                     <!-- card start -->
+                     <div>
+                        <div>
                             <div>
-                              <h5
-                                class="md:text-2xl text-xl font-semibold md:leading-[140%]"
-                              >
-                                Shakib Al Hasan
-                              </h5>
-                              <p>Parent of Grade 1 Student</p>
+                                <img src="images/team/professonal2.png" alt="team-2">
                             </div>
-                          </div>
-                          <div class="absolute right-0 z-[-1]">
-                            <img
-                              src="/images/testimonial/quotation.png"
-                              alt="quotation"
-                              class="lg:w-auto w-9"
-                            />
-                          </div>
+                            <div>
+                                <h4><a href="#">Jane Cooper</a></h4>
+                                <p>Marketing Coordinator</p>
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <p>
-                          Their product exceeded his my routi expectations. The
-                          the quality and attention to detail a the a most
-                          outstanding and it has become an essential most a
-                          education the man who can do
-                        </p>
-                        <ul class="flex items-center gap-1 lg:pt-10 pt-5">
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i
-                              class="fa-regular fa-star text-slate-500 opacity-30 text-xl"
-                            ></i>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                     <!-- card end -->
-                  </div>
-                  <div class="swiper-slide">
-                    <!-- card start -->
-                    <div class="lg:p-10 sm:p-8 py-8 sm:py-0 sm:-mr-10">
-                      <div
-                        class="bg-white/80 border border-[#F2F2F2] lg:p-15 md:p-5 p-3 max-w-[630px] w-full rounded-[10px] ml-auto shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)]"
-                      >
-                        <div
-                          class="flex justify-between items-center relative z-10 lg:pb-7.5 pb-5"
-                        >
-                          <div class="flex items-center gap-5">
-                            <img
-                              src="/images/testimonial/user-1.png"
-                              alt="bg-img"
-                            />
+
+                     <!-- card start -->
+                     <div>
+                        <div>
                             <div>
-                              <h5
-                                class="md:text-2xl text-xl font-semibold md:leading-[140%]"
-                              >
-                                Shakib Al Hasan
-                              </h5>
-                              <p>Parent of Grade 1 Student</p>
+                                <img src="images/team/professonal3.png" alt="team-3">
                             </div>
-                          </div>
-                          <div class="absolute right-0 z-[-1]">
-                            <img
-                              src="/images/testimonial/quotation.png"
-                              alt="quotation"
-                              class="lg:w-auto w-9"
-                            />
-                          </div>
+                            <div>
+                                <h4><a href="#">Jane Cooper</a></h4>
+                                <p>Marketing Coordinator</p>
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <p>
-                          Their product exceeded his my routi expectations. The
-                          the quality and attention to detail a the a most
-                          outstanding and it has become an essential most a
-                          education the man who can do
-                        </p>
-                        <ul class="flex items-center gap-1 lg:pt-10 pt-5">
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i class="fa-solid fa-star text-xl"></i>
-                          </li>
-                          <li>
-                            <i
-                              class="fa-regular fa-star text-slate-500 opacity-30 text-xl"
-                            ></i>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
-                    <!-- card end -->
-                  </div>
+                    <!-- card start -->
                 </div>
-              </div>
             </div>
-          </div>
-          <!-- <div class="testimonial-pagination"></div> -->
         </div>
-      </div>
     </section>
+    <!-- Team section end -->
 
-    <!-- ==========================================================================
-         MỤC 12: LATEST BLOG AND NEWS (Bài viết tin tức)
-         ========================================================================== -->
-    <section id="blog" class="lg:pt-15 pt-10">
-      <div
-        class="lg:py-[120px] py-20 bg-[linear-gradient(180deg,_#FFF0E5_0%,_rgba(255,_240,_229,_0.00)_100%)]"
-      >
-        <div class="container container-for-me py-6">
-          <div>
-            <div class="flex justify-between items-center lg:pb-15 pb-10">
-              <div class="lg:max-w-[630px]">
-                <p
-                  class="text-teal-400 font-bubblegum-sans text-[19px] wow fadeInUp"
-                >
-                  Latest Blog And News
-                </p>
-                <h2
-                  class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  Wonderworks Child Development Center Discovery Kids Preschool
-                </h2>
-              </div>
+    <!-- PART 2 - SECTION 3: STUDENT AGE & KNOWLEDGE SECTION -->
+    <!-- student age section start -->
+    <section id="knowledge">
+        <div>
+            <div class="container">
+                <div>
+                    <!-- left side start -->
+                    <div>
+                        <div>
+                            <p>Student knowledge</p>
+                            <h2 data-wow-delay=".3s">Knowledge for All learn design Excellence for Everyone</h2>
+                        </div>
+                        <p data-wow-delay=".4s">Lorem ipsum dolor sit amet consectetur adipiscing elit platea  the osr of a proin mollis pretium facilisi in, ligula volutpat </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <!-- left side end -->
+                    <!-- right side start -->
+                    <div>
+                       <div>
+                           <div>
+                               <h5><span>1-2</span> <span>Years</span></h5>
+                            </div>
+                            <div>
+                                <h5><span>9-11</span> <span>Years</span></h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h5><span>3-5</span> <span>Years</span></h5>
+                            </div>
+                            <div>
+                                <h5><span>6-8</span> <span>Years</span></h5>
+                            </div>
+                            <div>
+                                <h5><span>16-18</span> <span>Years</span></h5>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h5><span>12-15</span> <span>Years</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right side end -->
+                </div>
             </div>
-            <div class="grid lg:grid-cols-2 grid-cols-1 gap-7.5">
-              <div class="flex flex-col gap-7.5">
-                <!-- card start -->
-                <div
-                  class="bg-white rounded-[10px] p-2.5 flex sm:flex-row flex-col sm:items-center gap-5 shadow-4xl wow fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <div class="w-full sm:max-w-[210px]">
-                    <img
-                      src="/images/blog/blog-1.png"
-                      alt="blog-img-1"
-                      class="w-full h-full object-cover rounded-md"
-                    />
-                  </div>
-                  <div>
-                    <div class="lg:pb-5 md:pb-4 pb-3 flex items-center gap-5">
-                      <p>
-                        <i
-                          class="fa-regular fa-calendar-days text-teal-400 mr-1 inline-block"
-                        ></i
-                        ><small>October 19, 2023</small>
-                      </p>
-                      <p>
-                        <i
-                          class="fa-regular fa-user text-teal-400 mr-1 inline-block"
-                        ></i
-                        ><small>By admin</small>
-                      </p>
-                    </div>
-                    <h3 class="lg:max-w-[370px]">
-                      <a
-                        href=""
-                        class="md:text-2xl text-xl md:leading-[141%] leading-[120%] font-semibold hover:text-teal-400 transition-all duration-500"
-                        >Empowering Children Through Education the a Igniting</a
-                      >
-                    </h3>
-                    <a
-                      href=""
-                      class="inline-flex items-center gap-2.5 lg:mt-6 mt-4 group/btn"
-                    >
-                      <span
-                        class="group-hover/btn:text-teal-400 transition-all duration-500"
-                        >Read More</span
-                      >
-                      <span
-                        class="group-hover/btn:ml-1 group-hover/btn:text-teal-400 transition-all duration-500"
-                      >
-                        <i class="fa-solid fa-arrow-right"></i
-                      ></span>
-                    </a>
-                  </div>
-                </div>
-                <!-- card end -->
-                <!-- card start -->
-                <div
-                  class="bg-white rounded-[10px] p-2.5 flex sm:flex-row flex-col sm:items-center gap-5 shadow-4xl wow fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <div class="w-full sm:max-w-[210px]">
-                    <img
-                      src="/images/blog/blog-2.png"
-                      alt="img"
-                      class="w-full h-full object-cover rounded-md"
-                    />
-                  </div>
-                  <div>
-                    <div class="lg:pb-5 md:pb-4 pb-3 flex items-center gap-5">
-                      <p>
-                        <i
-                          class="fa-regular fa-calendar-days text-teal-400 mr-1 inline-block"
-                        ></i
-                        ><small>October 19, 2023</small>
-                      </p>
-                      <p>
-                        <i
-                          class="fa-regular fa-user text-teal-400 mr-1 inline-block"
-                        ></i
-                        ><small>By admin</small>
-                      </p>
-                    </div>
-                    <h3 class="lg:max-w-[370px]">
-                      <a
-                        href=""
-                        class="md:text-2xl text-xl md:leading-[141%] leading-[120%] font-semibold hover:text-teal-400 transition-all duration-500"
-                        >Empowering Children Through Education the a Igniting</a
-                      >
-                    </h3>
-                    <a
-                      href=""
-                      class="inline-flex items-center gap-2.5 lg:mt-6 mt-4 group/btn"
-                    >
-                      <span
-                        class="group-hover/btn:text-teal-400 transition-all duration-500"
-                        >Read More</span
-                      >
-                      <span
-                        class="group-hover/btn:ml-1 group-hover/btn:text-teal-400 transition-all duration-500"
-                      >
-                        <i class="fa-solid fa-arrow-right"></i
-                      ></span>
-                    </a>
-                  </div>
-                </div>
-                <!-- card end -->
-              </div>
-              <div>
-                <div
-                  class="bg-white rounded-[10px] flex flex-col items-start gap-5 shadow-4xl h-full wow fadeInUp"
-                  data-wow-delay=".3s"
-                >
-                  <div class="w-full">
-                    <img
-                      src="/images/blog/blog-3.png"
-                      alt="blog-img-3"
-                      class="w-full"
-                    />
-                  </div>
-                  <div class="px-10 pb-10">
-                    <div class="lg:pb-5 md:pb-4 pb-3 flex items-center gap-5">
-                      <p>
-                        <i
-                          class="fa-regular fa-calendar-days text-teal-400 mr-1 inline-block"
-                        ></i
-                        ><small>October 19, 2023</small>
-                      </p>
-                      <p>
-                        <i
-                          class="fa-regular fa-user text-teal-400 mr-1 inline-block"
-                        ></i
-                        ><small>By admin</small>
-                      </p>
-                    </div>
-                    <h3>
-                      <a
-                        href=""
-                        class="md:text-2xl text-xl md:leading-[141%] leading-[120%] font-semibold hover:text-teal-400 transition-all duration-500"
-                        >Empowering Children Through Education the a Igniting</a
-                      >
-                    </h3>
-                    <a
-                      href=""
-                      class="inline-flex items-center gap-2.5 lg:mt-6 mt-4 group/btn"
-                    >
-                      <span
-                        class="group-hover/btn:text-teal-400 transition-all duration-500"
-                        >Read More</span
-                      >
-                      <span
-                        class="group-hover/btn:ml-1 group-hover/btn:text-teal-400 transition-all duration-500"
-                      >
-                        <i class="fa-solid fa-arrow-right"></i
-                      ></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+            <!-- shap -->
+            <div>
+                <img src="images/shapes/knowledge-lshpe.png" alt="tree">
             </div>
-          </div>
+            <div>
+                <img src="images/shapes/knowledge-animal.png" alt="animal">
+            </div>
+            <!-- shap -->
         </div>
-      </div>
     </section>
+    <!-- student age section end -->
 
-    <!-- ==========================================================================
-         MỤC 13: GET CONNECTED / NEWSLETTER (Đăng ký nhận thông báo)
-         ========================================================================== -->
-    <section
-      id="newsletter"
-      class="bg-[linear-gradient(180deg,_rgba(238,255,200,0.00)_0%,_#E9FFB6_100%)] overflow-x-hidden"
-    >
-      <div
-        class="bg-bottom bg-no-repeat bg-contain bg-[url(/images/newsletter/bg-img.png)]"
-      >
-        <div class="container container-for-me py-6">
-          <div
-            class="flex lg:flex-row flex-col lg:items-center justify-between gap-8"
-          >
-            <div class="max-w-[598px] w-full order-1 lg:order-0">
-              <div
-                class="bg-[url(/images/newsletter/egg-shap.png)] bg-no-repeat bg-bottom bg-contain animate-float-x"
-              >
-                <img
-                  src="/images/newsletter/student.png"
-                  alt="student-img"
-                  class="mx-auto"
-                />
-              </div>
+    <!-- PART 2 - SECTION 4: TESTIMONIALS SECTION & SWIPER CAROUSEL -->
+    <!-- Testimonial section start -->
+    <section id="testimonials">
+        <div class="container">
+            <div>
+                <div>
+                    <p>Clients Testimonial</p>
+                    <h2 data-wow-delay=".3s">Unlocking the Power of  Wonderworks Child</h2>
+                </div>
+                <p>Use receiving accounts a number a currencies and get paid like a local Use receivin accounts a number paid the most beautiful think</p>
             </div>
-            <div class="lg:max-w-[530px] order-0 lg:order-1">
-              <p
-                class="font-bubblegum-sans text-[19px] text-slate-500 wow fadeInUp"
-              >
-                Stay Connected With Our Newsletter
-              </p>
-              <h2
-                class="font-bold lg:text-[32px] md:text-[28px] text-2xl lg:leading-[130%] md:leading-[120%] leading-[110%] wow fadeInUp"
-                data-wow-delay=".3s"
-              >
-                Subscribe to receive news, event updates, and educational tips
-                directly in your inbox
-              </h2>
-              <form action="#" class="relative lg:mt-10 mt-5">
-                <input
-                  type="email"
-                  placeholder="Your Email Address..."
-                  class="bg-white rounded-[10px] border border-black pl-6 lg:py-7 py-4 max-h-20 w-full outline-none"
-                />
-                <button
-                  type="submit"
-                  class="absolute right-[10px] top-1/2 -translate-y-1/2 z-10 rounded-[10px] bg-orange-500 px-5 py-3 text-white transition-colors duration-300 hover:bg-blue-600 cursor-pointer flex items-center gap-2"
-                >
-                  <span>Submit</span> <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </form>
+            <div>
+                <div>
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <!-- card start -->
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <img src="images/testimonial/user-1.png" alt="bg-img">
+                                                <div>
+                                                    <h5>Shakib Al Hasan</h5>
+                                                    <p>Marketing Manager</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="images/testimonial/quotation.png" alt="quotation">
+                                            </div>
+                                        </div>
+                                        <p>Their product exceeded his my routi  expectations. The the quality and attention to detail a the a most outstanding and it has become an essential most a education the man who can do </p>
+
+                                    </div>
+                                </div>
+                                <!-- card end -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- card start -->
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <img src="images/testimonial/user-1.png" alt="bg-img">
+                                                <div>
+                                                    <h5>Shakib Al Hasan</h5>
+                                                    <p>Marketing Manager</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="images/testimonial/quotation.png" alt="quotation">
+                                            </div>
+                                        </div>
+                                        <p>Their product exceeded his my routi  expectations. The the quality and attention to detail a the a most outstanding and it has become an essential most a education the man who can do </p>
+
+                                    </div>
+                                </div>
+                                <!-- card end -->
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- card start -->
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <img src="images/testimonial/user-1.png" alt="bg-img">
+                                                <div>
+                                                    <h5>Shakib Al Hasan</h5>
+                                                    <p>Marketing Manager</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <img src="images/testimonial/quotation.png" alt="quotation">
+                                            </div>
+                                        </div>
+                                        <p>Their product exceeded his my routi  expectations. The the quality and attention to detail a the a most outstanding and it has become an essential most a education the man who can do </p>
+
+                                    </div>
+                                </div>
+                                <!-- card end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div></div> -->
             </div>
-          </div>
         </div>
-      </div>
     </section>
-    <!-- ==========================================================================
-         MỤC 14: FOOTER (Chân trang)
-         ========================================================================== -->
-    <footer id="contact" class="container-for-me py-6">
-      <div
-        class="container mx-auto px-4 w-full flex flex-col lg:flex-row justify-between gap-6 items-start"
-      >
-        <div class="footer__logo wow fadeInUp" data-wow-delay=".3s">
-          <a href="#" class="flex items-center gap-1">
-            <img src="images/logo.png" alt="Ascent Logo" />
-            <span class="font-bold text-3xl">Ascent</span>
-          </a>
-          <p class="mt-4 max-w-sm text-[#686868]">
-            Yes, there are many notable ma corporate the a od businesses
-            Informati worldwide
-          </p>
-          <ul class="flex flex-row items-center gap-5 pt-7.5">
-            <li>
-              <a
-                href=""
-                class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-100 hover:text-amber-900 hover:bg-green-500 transition-all duration-500"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-100 hover:text-amber-900 hover:bg-green-500 transition-all duration-500"
-              >
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-100 hover:text-amber-900 hover:bg-green-500 transition-all duration-500"
-              >
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                class="rounded-md w-9 h-9 flex items-center justify-center bg-orange-100 hover:text-amber-900 hover:bg-green-500 transition-all duration-500"
-              >
-                <i class="fa-brands fa-pinterest-p"></i>
-              </a>
-            </li>
-          </ul>
+    <!-- Testimonial section end -->
+
+    <!-- PART 2 - SECTION 5: BLOG & RECENT NEWS SECTION -->
+    <!-- blog section start -->
+    <section id="blog">
+        <div>
+            <div class="container">
+                <div>
+                    <div>
+                        <div>
+                            <p>Latest Blog And News</p>
+                            <h2 data-wow-delay=".3s">Wonderworks Child Development Center Discovery Kids Preschool</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <!-- card start -->
+                            <div data-wow-delay=".3s">
+                                <div>
+                                    <img src="images/blog/blog-1.png" alt="blog-img-1">
+                                </div>
+                                <div>
+                                    <div>
+                                        <p><small>October 19, 2023</small></p>
+                                        <p><small>By admin</small></p>
+                                    </div>
+                                    <h3><a href="#">Empowering Children Through Education the a Igniting</a></h3>
+                                    <a href="#">
+                                        <span>Read More</span> 
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- card end -->
+                            <!-- card start -->
+                            <div data-wow-delay=".3s">
+                                <div>
+                                    <img src="images/blog/blog-2.png" alt="img">
+                                </div>
+                                <div>
+                                    <div>
+                                        <p><small>October 19, 2023</small></p>
+                                        <p><small>By admin</small></p>
+                                    </div>
+                                    <h3><a href="#">Empowering Children Through Education the a Igniting</a></h3>
+                                    <a href="#">
+                                        <span>Read More</span> 
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- card end -->
+                        </div>
+                        <div>
+                            <div data-wow-delay=".3s">
+                                <div>
+                                    <img src="images/blog/blog-3.png" alt="blog-img-3">
+                                </div>
+                                <div>
+                                    <div>
+                                        <p><small>October 19, 2023</small></p>
+                                        <p><small>By admin</small></p>
+                                    </div>
+                                    <h3><a href="#">Empowering Children Through Education the a Igniting</a></h3>
+                                    <a href="#">
+                                        <span>Read More</span> 
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer__pages wow fadeInUp -ml-10" data-wow-delay=".5s">
-          <h4 class="text-2xl font-semibold">Pages</h4>
-          <ul class="flex flex-col gap-[15px] pt-5">
-            <li>
-              <a
-                href="#about"
-                class="text-[#686868] transition-all duration-500 transform inline-block hover:translate-x-1 hover:text-orange-400"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="#programs"
-                class="text-[#686868] transition-all duration-500 transform inline-block hover:translate-x-1 hover:text-orange-400"
-                >Programs</a
-              >
-            </li>
-            <li>
-              <a
-                href="#portfolio"
-                class="text-[#686868] transition-all duration-500 transform inline-block hover:translate-x-1 hover:text-orange-400"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a
-                href="#blog"
-                class="text-[#686868] transition-all duration-500 transform inline-block hover:translate-x-1 hover:text-orange-400"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="text-[#686868] transition-all duration-500 transform inline-block hover:translate-x-1 hover:text-orange-400"
-                >Contact</a
-              >
-            </li>
-          </ul>
+    </section>
+    <!-- blog section end -->
+
+    <!-- PART 2 - SECTION 6: NEWSLETTER SUBSCRIPTION SECTION -->
+    <!-- newsletter section start -->
+    <section id="newsletter">
+        <div>
+            <div class="container">
+                <div>
+                    <div>
+                        <div>
+                            <img src="images/newsletter/student.png" alt="student-img">
+                        </div>
+                    </div>
+                    <div>
+                        <p>Get Connected</p>
+                        <h2 data-wow-delay=".3s">Education That Sparks Imaginat Nurturing Curiosity Inspire</h2>
+                        <div>
+                            <input type="text" placeholder="Enter Your Email">
+                            <button class="btn"><span>Submit</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer__Contact wow fadeInUp" data-wow-delay=".5s">
-          <h4 class="text-2xl font-semibold">Contact Info</h4>
-          <ul class="flex flex-col gap-[15px] pt-5">
-            <li>
-              <p class="text-[#686868] flex items-center gap-4">
-                <span
-                  class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-600"
-                  ><i class="fa-solid fa-phone"></i
-                ></span>
-                <a href="">(629) 555-0129</a>
-              </p>
-            </li>
-            <li>
-              <p class="text-[#686868] flex items-center gap-4">
-                <span
-                  class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-600"
-                  ><i class="fa-solid fa-envelope"></i
-                ></span>
-                <a href="">info@example.com</a>
-              </p>
-            </li>
-            <li>
-              <p class="text-[#686868] flex items-center gap-4">
-                <span
-                  class="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-600"
-                  ><i class="fa-solid fa-location-dot"></i
-                ></span>
-                <span class="max-w-[168px]">6391 Elgin St. Celina, 10299</span>
-              </p>
-            </li>
-          </ul>
+    </section>
+    <!-- newsletter section end -->
+
+    <!-- PART 2 - SECTION 7: FOOTER SECTION -->
+    <footer id="contact">
+        <div class="container">
+            <div>
+                <!-- compnay info start -->
+                <div data-wow-delay=".3s">
+                    <a href="#">
+                        <img src="images/logo.png" alt="img">
+                        <span>Ascent</span>
+                    </a>
+                    <p>Yes, there are many notable ma corporate the a  od businesses Informati worldwide</p>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <!-- compnay info end -->
+                <!-- pages link start -->
+                <div data-wow-delay=".5s">
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Latest Service</a></li>
+                        <li><a href="#">Latest Blog And News</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Our Creative Team Member</a></li>
+                    </ul>
+                </div>
+                 <!-- pages link end -->
+                  <!-- contact link start -->
+                <div data-wow-delay=".5s">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <p> 
+                                <span></span> <span>1179 KFC Road, Lisbon, Portugal</span>
+                            </p>
+                        </li>
+                        <li>
+                            <p> 
+                                <span></span> <a href="#">Sakib23@gmail.com</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span></span> <a href="#">012547892354</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                 <!-- contact link end -->
+            </div>
+            <div>
+                <div>
+                    <p data-wow-delay=".3s" data-wow-duration="1s">&copy; <a href="#">Yoursitename</a> 2024 | All Rights Reserved</p>
+                    <ul data-wow-delay=".3s" data-wow-duration="1s">
+                        <li><a href="#">Trams & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="ending wow fadeInLeft" data-wow-delay=".3s">
-        <div class="pt-[75px] overflow-x-hidden">
-          <div
-            class="flex lg:flex-row flex-col justify-between lg:items-center pt-[30px] border-t border-t-white border-white/20"
-          >
-            <p class="text-[#686868] wow fadeInLeft" data-wow-delay=".3s">
-              © 2026 Ascent. All Rights Reserved.
-            </p>
-            <ul
-              class="flex items-center gap-8 wow fadeInRight"
-              data-wow-delay=".5s"
-            >
-              <li><a href="">Trams & Condition</a></li>
-              <li><a href="">Privacy Policy</a></li>
-              <li><a href="">Contact Us</a></li>
-            </ul>
-          </div>
+        <!-- Scroll to top button -->
+        <div id="scroll-up">
         </div>
-        <div class="relative">
-          <div
-            id="scroll-up"
-            class="absolute bottom-15 xl:left-[90%] left-1/2 -translate-x-1/2 w-[50px] h-[50px] rounded-full bg-green-600 text-white flex justify-center items-center border-[3px] border-white cursor-pointer shadow-lg transition-all duration-500 hover:bg-orange-500"
-          >
-            <i class="fa-solid fa-arrow-up"></i>
-          </div>
-        </div>
-      </div>
     </footer>
 
-    <!-- Swiper JS CDN (thư viện slider) -->
+    <!-- SCRIPTS & LIBRARIES -->
+    <!-- END PART 2: DEV 2 -->
+
+    <!-- Swiper JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- WOW.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- Back To Top Script -->
+    <script src="./libs/backtotop/util.js"></script>
 
-    <!-- wow -->
-    <script src="libs/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
-    <!-- scroll-up -->
-    <script>
-      // Lấy phần tử nút scroll-up theo ID
-      const scrollUpBtn = document.getElementById("scroll-up");
+    <!-- Main JavaScript -->
+    <script src="./libs/main.js"></script>
+</body>
 
-      // Bắt sự kiện khi người dùng click vào nút
-      scrollUpBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        // Lệnh cuộn trang lên đầu với hiệu ứng mượt mà (smooth)
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      });
-    </script>
-    <!-- mySwiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-      });
-    </script>
-
-    <!-- flowbite -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
-  </body>
 </html>
