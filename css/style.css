@@ -1,0 +1,698 @@
+/* ASCENT - PART 2 STYLESHEET: DEV 2 ONLY (FAQ TO FOOTER) */
+/* SHARED FOUNDATION: Fonts, Theme, Container, Base Typography */
+/* ASCENT - COMBINED STYLESHEET: PART 1 & BASE FOUNDATION */
+
+/* 1. GOOGLE FONTS & TAILWIND V4 THEME CONFIG */
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@theme {
+  --color-primary: #F7941E;
+  --color-primary-foreground: #F7941E;
+  --color-secondary: #1CBBB4;
+  --color-secondary-foreground: #1CBBB4;
+  --color-destructive: #ED145B;
+  --color-destructive-foreground: #ED145B;
+  --color-green: #73BE48;
+  --color-green-foreground: #73BE48;
+  --color-warm: #FFF0E5;
+  --color-cream-foreground: #ffffff;
+  --color-background: #ffffff;
+  --color-muted: #090808;
+  --color-muted-foreground: #686868;
+
+  --font-jost: 'Jost', sans-serif;
+  --font-bubblegum-sans: 'Bubblegum Sans', cursive;
+  --font-nunito: 'Nunito', sans-serif;
+
+  --spacing-7_5: 30px;
+  --spacing-12_5: 50px;
+  --spacing-15: 60px;
+
+  --shadow-3xl: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* 2. CONTAINER & LAYOUT */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (min-width: 640px) {
+  .container { max-width: 640px; }
+}
+
+@media (min-width: 768px) {
+  .container { max-width: 768px; }
+}
+
+@media (min-width: 1024px) {
+  .container { max-width: 1024px; }
+}
+
+@media (min-width: 1290px) {
+  .container { max-width: 1290px; }
+}
+
+/* 3. TYPOGRAPHY & FONT MAPPING */
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #686868;
+}
+
+h1, h2, h3, h4, h5, h6, .font-jost {
+  font-family: 'Jost', sans-serif;
+  color: #090808;
+}
+
+p, .font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.font-bubblegum-sans {
+  font-family: 'Bubblegum Sans', cursive !important;
+}
+
+/* Font weight utility classes matching original output */
+.font-bold,
+b,
+strong {
+  font-weight: 700 !important;
+}
+
+.font-semibold {
+  font-weight: 600 !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.font-normal {
+  font-weight: 400 !important;
+}
+
+h2.font-bold,
+h4.font-bold,
+h5.font-bold,
+span.font-bold {
+  font-weight: 700 !important;
+}
+
+h3.font-semibold,
+h5.font-semibold,
+a.font-semibold {
+  font-weight: 600 !important;
+}
+
+a.font-medium {
+  font-weight: 500 !important;
+}
+
+/* 4. COLOR & BORDER UTILITIES */
+/* Color Palette */
+.bg-destructive { background-color: #ED145B; }
+.text-destructive-foreground { color: #ED145B; }
+.border-destructive { border-color: #ED145B; }
+
+.bg-primary { background-color: #F7941E; }
+.text-primary { color: #F7941E; }
+.text-primary-foreground { color: #F7941E; }
+.border-primary { border-color: #F7941E; }
+
+.bg-secondary { background-color: #1CBBB4; }
+.text-secondary-foreground { color: #1CBBB4; }
+.border-secondary { border-color: #1CBBB4; }
+
+.bg-green { background-color: #73BE48; }
+.text-green-foreground { color: #73BE48; }
+.border-green { border-color: #73BE48; }
+
+.bg-warm { background-color: #FFF0E5; }
+.bg-background { background-color: #ffffff; }
+.text-cream-foreground { color: #ffffff; }
+.bg-muted { background-color: #090808; }
+.text-muted { color: #090808; }
+.text-muted-foreground { color: #686868; }
+
+/* Basic Borders and Layout */
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-2 {
+  border-width: 2px;
+  border-style: solid;
+}
+
+.border-gray-200 {
+  border-color: #eaedf2 !important;
+}
+
+.border-\[\#F2F2F2\],
+[class*="border-[#F2F2F2]"] {
+  border-color: #F2F2F2 !important;
+}
+
+/* Custom Spacing */
+.gap-7\.5 { gap: 30px; }
+.gap-y-7\.5 { row-gap: 30px; }
+.pt-15 { padding-top: 60px; }
+.pb-15 { padding-bottom: 60px; }
+.top-15 { top: 60px; }
+.w-7\.5 { width: 30px; }
+.max-h-15 { max-height: 60px; }
+
+@media (min-width: 768px) {
+  .md\:gap-7\.5 { gap: 30px; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:gap-7\.5 { gap: 30px; }
+  .lg\:pt-15 { padding-top: 60px; }
+  .lg\:pb-15 { padding-bottom: 60px; }
+  .lg\:mb-15 { margin-bottom: 60px; }
+  .lg\:mt-7\.5 { margin-top: 30px; }
+  .lg\:py-7\.5 { padding-top: 30px; padding-bottom: 30px; }
+  .lg\:pl-7\.5 { padding-left: 30px; }
+}
+
+/* 5. BUTTONS & UI COMPONENTS */
+.btn {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s ease-in-out;
+  padding: 20px 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: normal;
+}
+
+@media (max-width: 1024px) {
+  .btn, .btn-rounded-full {
+    padding: 10px 30px;
+  }
+}
+
+/* Button sliding background default hover: Teal (#1CBBB4) */
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1CBBB4;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  color: #ffffff !important;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+/* Header button (Get A Quote): Teal base, sliding green (#73BE48) on hover */
+.btn.after\:bg-green::after {
+  background-color: #73BE48 !important;
+}
+
+/* Hide Get A Quote button on header on screens < 640px */
+@media (max-width: 639px) {
+  header a.btn.sm\:flex {
+    display: none !important;
+  }
+}
+
+/* Banner button (Learn More): Green base, sliding Teal (#1CBBB4) on hover */
+
+/* Outline button (Get a quote): Normal weight black text */
+/* Outline button (Get a quote, Read More): Black text default, white on hover */
+.btn:not(.bg-primary):not(.bg-secondary):not(.bg-destructive):not(.bg-green) {
+  font-weight: 400 !important;
+  color: #000000 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn:not(.bg-primary):not(.bg-secondary):not(.bg-destructive):not(.bg-green):hover,
+.btn:hover,
+.btn:hover span,
+button.btn:hover,
+a.btn:hover {
+  color: #ffffff !important;
+}
+
+/* Read More link: Normal weight, black text, without arrows */
+.group\/btn,
+.group\/btn span {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400 !important;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Read More hover in Programs and Services: Green (#73BE48) */
+.group\/btn:hover span,
+.group\/card:hover .group\/btn span {
+  color: #73BE48 !important;
+}
+
+/* Blog Read More hover: Teal (#1CBBB4) */
+#blog .group\/btn:hover span,
+.blog .group\/btn:hover span,
+.group\/btn:hover span.group-hover\/btn\:text-secondary-foreground {
+  color: #1CBBB4 !important;
+}
+
+.group\/btn::after {
+  content: "" !important;
+  display: none !important;
+}
+
+
+
+/* 6. KEYFRAME ANIMATIONS */
+@keyframes left-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(14px); }
+}
+
+@keyframes left-right-2 {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-40px); }
+}
+
+@keyframes up-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes skw {
+  0%, 100% { transform: skewX(0); }
+  50% { transform: skewX(6deg); }
+}
+
+.animate-left-right { animation: left-right 2s linear infinite; }
+.animate-left-right-2 { animation: left-right-2 4s linear infinite; }
+.animate-up-down { animation: up-down 2s linear infinite; }
+.animate-skw { animation: skw 2s linear infinite; }
+
+/* BLOCK 2: DEV 2 (FAQ TO FOOTER) */
+/* Part 2 UI Components (.btn-rounded-full) */
+/* Fully rounded pill button (Student Knowledge: Learn More) */
+.btn-rounded-full {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 35px;
+  border-radius: 9999px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  color: #ffffff;
+  border: 2px solid transparent;
+  line-height: normal;
+}
+
+.btn-rounded-full:hover {
+  background-color: transparent !important;
+  color: #ED145B !important;
+  border-color: #ED145B !important;
+}
+
+/* 1. FAQ ACCORDION SECTION */
+.according-item {
+  border: 2px solid #F2F2F2 !important;
+  border-radius: 6px;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  transition: all 0.3s ease;
+}
+
+.according-item:hover {
+  border-color: #e2e4e8 !important;
+}
+
+.according-item .icon {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #F7941E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+/* FAQ accordion toggle icon */
+.according-item .icon::before,
+.according-item .icon::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Active FAQ accordion color: Teal (#1CBBB4) */
+.according-item.active-accor .icon {
+  background-color: #1CBBB4 !important;
+}
+
+.according-item.active-accor .accordion-details {
+  max-height: 250px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 2. TEAM SECTION */
+.group\/team {
+  border: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+
+.group\/team:hover {
+  border-color: #73BE48 !important;
+}
+
+.group\/team img {
+  transition: all 0.5s ease;
+}
+
+/* Team social links container */
+.group\/team ul li a {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: #FFF0E5;
+  transition: all 0.4s ease;
+}
+
+.group\/team ul li a:hover {
+  background-color: #ED145B !important;
+  color: #ffffff !important;
+}
+
+/* 3. STUDENT KNOWLEDGE SECTION */
+.bg-\[\#0A6375\] {
+  background-color: #0A6375 !important;
+}
+
+/* Knowledge age title line-height (32px) */
+.bg-warm .font-nunito,
+.bg-warm h5 {
+  line-height: 32px !important;
+}
+
+/* Hide decorative tree on screens under 1280px (xl) */
+@media (max-width: 1279px) {
+  .bg-warm img[alt="tree"],
+  .bg-warm div:has(> img[alt="tree"]) {
+    display: none !important;
+  }
+}
+
+/* Desktop dimensions for knowledge age cards */
+@media (min-width: 1280px) {
+  /* Card 1-2 Years: 281px x 224px */
+  .bg-warm .bg-\[\#0A6375\] {
+    width: 281px !important;
+    height: 224px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+    padding: 80px 85px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* Remaining 5 age cards (9-11, 3-5, 6-8, 16-18, 12-15): 190px x 170px */
+  .bg-warm .max-w-\[190px\]:not(.bg-\[\#0A6375\]) {
+    width: 190px !important;
+    height: 170px !important;
+    max-width: 190px !important;
+    max-height: 190px !important;
+    padding: 53px 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+
+/* Column 1 top margin (110px) and right alignment */
+.bg-warm .mt-\[110px\] {
+  margin-top: 110px !important;
+}
+
+/* Column 3 (12-15 Years) vertically centered */
+.bg-warm .self-center {
+  align-self: center !important;
+}
+
+/* Background tree decoration z-index */
+.bg-warm img[alt="tree"] {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* 4. TESTIMONIALS SECTION */
+.bg-testimonial-banner,
+.testimonial .after\:bg-testimonial-banner::after {
+  background-image: url('../images/testimonial/bg-img.png');
+}
+
+/* Testimonial swiper alignment */
+.testimonial .testimonial-swiper {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.testimonial .swiper-slide > div > div {
+  border: 1px solid #F2F2F2 !important;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+}
+
+/* 5. BLOG & RECENT NEWS SECTION */
+.shadow-4xl {
+  box-shadow: 0px 4.4px 20px -1px rgba(19, 16, 34, 0.05);
+}
+
+.shadow-4xl:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* 6. NEWSLETTER SUBSCRIPTION SECTION */
+.bg-newsletter-banner {
+  background-image: url('../images/newsletter/bg-img.png');
+}
+
+/* Get Connected subtitle color (#000) */
+.bg-newsletter-banner p.font-bubblegum-sans {
+  color: #000000 !important;
+}
+
+/* Newsletter email input: White background, 10px rounded border */
+.bg-newsletter-banner input {
+  background-color: #ffffff !important;
+  border: 1px solid #000000 !important;
+  border-radius: 10px !important;
+  color: #000000 !important;
+}
+
+/* Newsletter submit button aligned inside input */
+.bg-newsletter-banner button.btn {
+  position: absolute !important;
+  right: 10px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  translate: none !important;
+  padding: 20px 30px !important;
+  max-height: 60px !important;
+  height: 60px !important;
+  border-radius: 10px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  z-index: 20 !important;
+}
+
+.bg-newsletter-banner button.btn::after {
+  border-radius: 10px !important;
+  background-color: #1CBBB4 !important;
+}
+
+/* 7. FOOTER SECTION & SCROLL UP BUTTON */
+footer {
+  background-color: #ffffff;
+}
+
+/* Footer navigation links transition */
+footer ul li a {
+  transition: all 0.3s ease;
+}
+
+/* Bottom legal links (Trams & Condition, Privacy Policy, Contact Us): No hover effect */
+footer .pt-\[75px\] ul li a,
+footer .pt-\[75px\] ul li a:hover {
+  color: #000000 !important;
+  text-decoration: none !important;
+  transition: none !important;
+  cursor: pointer;
+}
+
+/* Footer Pages and Contact links: Orange hover (#F7941E) */
+footer ul.flex-col li a {
+  color: #686868;
+  transition: all 0.3s ease !important;
+}
+
+footer ul.flex-col li a:hover,
+footer .pt-5 li a:hover,
+footer .flex-col li a:hover {
+  color: #F7941E !important;
+}
+
+/* Left copyright text */
+footer .pt-\[75px\] p,
+footer .pt-\[75px\] p a {
+  color: #686868 !important;
+}
+
+footer .pt-\[75px\] p a:hover {
+  color: #F7941E !important;
+}
+
+/* Scroll to top button */
+#scroll-up {
+  position: absolute !important;
+  bottom: 80px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  background-color: #F7941E !important;
+  border: none !important;
+  box-shadow: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 20 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+@media (min-width: 1280px) {
+  #scroll-up {
+    left: 90% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+#scroll-up:hover {
+  background-color: #F7941E !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Logo chu Ascent dung font Nunito va mau den chuan */
+footer a span.text-3xl {
+  color: #090808 !important;
+  font-family: 'Nunito', sans-serif !important;
+}
+
+
+
+/* Blog Read More: Black text default, Teal hover (#1CBBB4) */
+#blog .group\/btn span,
+.blog .group\/btn span {
+  color: #000000 !important;
+  transition: color 0.3s ease !important;
+}
+
+#blog .group\/btn:hover span,
+.blog .group\/btn:hover span,
+.group\/btn:hover span.group-hover\/btn\:text-secondary-foreground {
+  color: #1CBBB4 !important;
+}
+/* END BLOCK 2: DEV 2 */
+
+
+/* SCROLL ENTRANCE ANIMATIONS (WOW.js) */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.wow {
+  visibility: hidden;
+}
