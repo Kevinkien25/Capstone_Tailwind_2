@@ -1,7 +1,11 @@
 /**
  * ASCENT - PART 1 JAVASCRIPT: DEV 1 ONLY
  * Scope: Header to Services Section
+ * ASCENT - PART 2 JAVASCRIPT: DEV 2 ONLY
+ * Scope: FAQ to Footer Section
  */
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // 1. Swiper: Services Carousel
@@ -107,12 +111,29 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // 5. WOW.js scroll animation (Part 1 elements)
+    // 2. Accordion FAQ Toggle
+    document.querySelectorAll(".according-btn").forEach(btn => {
+        btn.addEventListener("click", function (e) {
+            const item = e.currentTarget.closest(".according-item");
+            if (!item) return;
+            const isOpen = item.getAttribute("data-open") === "true";
+            document.querySelectorAll(".according-item").forEach(i => {
+                i.setAttribute("data-open", "false");
+                i.classList.remove("active-accor");
+            });
+            if (!isOpen) {
+                item.setAttribute("data-open", "true");
+                item.classList.add("active-accor");
+            }
+        });
+    });
+
+    // 3. WOW.js scroll animation (Part 1-2 elements)
     if (typeof WOW !== "undefined") {
         new WOW({
             boxClass: "wow",
             animateClass: "animated",
-            offset: 40,
+            offset: 20,
             mobile: true,
             live: true
         }).init();
