@@ -1,10 +1,9 @@
 /**
- * ASCENT - COMBINED JAVASCRIPT: DEV 1 + DEV 2
+ * ASCENT - PART 1 JAVASCRIPT: DEV 1 ONLY
+ * Scope: Header to Services Section
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-    /* KHỐI 1: DEV 1 (HEADER TO SERVICES) */
-
     // 1. Swiper: Services Carousel
     if (document.querySelector(".service-swiper")) {
         new Swiper(".service-swiper", {
@@ -64,13 +63,18 @@ document.addEventListener("DOMContentLoaded", function () {
         let currentScrollPos = window.scrollY;
 
         if (header && header_container) {
+            // At the very top (<= 50px): show full header
             if (currentScrollPos <= 50) {
                 header.style.top = "0px";
                 header.classList.remove("header-pinned");
-            } else if (prevScrollpos > currentScrollPos && currentScrollPos > header_container.clientHeight) {
+            } 
+            // Scroll up: pinned header appears with shadow
+            else if (prevScrollpos > currentScrollPos && currentScrollPos > header_container.clientHeight) {
                 header.style.top = top_header ? `-${top_header.clientHeight}px` : "0px";
                 header.classList.add("header-pinned");
-            } else {
+            } 
+            // Scroll down: header hides
+            else {
                 header.style.top = `-${header_container.clientHeight}px`;
                 header.classList.remove("header-pinned");
             }
@@ -88,11 +92,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 e.preventDefault();
                 const isOpen = subMenu.classList.contains("opacity-100");
 
+                // Close all other dropdowns
                 document.querySelectorAll(".offcanva .dropdown-item").forEach(item => {
                     item.classList.add("opacity-0", "invisible", "max-h-0");
                     item.classList.remove("opacity-100", "visible", "max-h-[450px]");
                 });
 
+                // Toggle current dropdown
                 if (!isOpen) {
                     subMenu.classList.remove("opacity-0", "invisible", "max-h-0");
                     subMenu.classList.add("opacity-100", "visible", "max-h-[450px]");
@@ -101,42 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    /* HẾT KHỐI 1: DEV 1 */
-
-
-    /* KHỐI 2: DEV 2 (FAQ TO FOOTER) */
-
-    // 5. Swiper: Testimonials Carousel
-    if (document.querySelector(".testimonial-swiper")) {
-        new Swiper(".testimonial-swiper", {
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            loop: true,
-            spaceBetween: 30,
-            slidesPerView: 1,
-        });
-    }
-
-    // 6. Accordion FAQ Toggle
-    document.querySelectorAll(".according-btn").forEach(btn => {
-        btn.addEventListener("click", function (e) {
-            const item = e.currentTarget.closest(".according-item");
-            if (!item) return;
-            const isOpen = item.getAttribute("data-open") === "true";
-            document.querySelectorAll(".according-item").forEach(i => {
-                i.setAttribute("data-open", "false");
-                i.classList.remove("active-accor");
-            });
-            if (!isOpen) {
-                item.setAttribute("data-open", "true");
-                item.classList.add("active-accor");
-            }
-        });
-    });
-
-    // 7. WOW.js Scroll Animations
+    // 5. WOW.js scroll animation (Part 1 elements)
     if (typeof WOW !== "undefined") {
         new WOW({
             boxClass: "wow",
@@ -146,6 +117,4 @@ document.addEventListener("DOMContentLoaded", function () {
             live: true
         }).init();
     }
-
-    /* HẾT KHỐI 2: DEV 2 */
 });

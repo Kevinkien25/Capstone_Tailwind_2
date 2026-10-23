@@ -1,0 +1,732 @@
+/* ASCENT - PART 1 STYLESHEET: DEV 1 ONLY (HEADER TO SERVICES) */
+/* SHARED FOUNDATION: Fonts, Theme, Container, Base Typography */
+/* ASCENT - COMBINED STYLESHEET: PART 1 & BASE FOUNDATION */
+
+/* 1. GOOGLE FONTS & TAILWIND V4 THEME CONFIG */
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@theme {
+  --color-primary: #F7941E;
+  --color-primary-foreground: #F7941E;
+  --color-secondary: #1CBBB4;
+  --color-secondary-foreground: #1CBBB4;
+  --color-destructive: #ED145B;
+  --color-destructive-foreground: #ED145B;
+  --color-green: #73BE48;
+  --color-green-foreground: #73BE48;
+  --color-warm: #FFF0E5;
+  --color-cream-foreground: #ffffff;
+  --color-background: #ffffff;
+  --color-muted: #090808;
+  --color-muted-foreground: #686868;
+
+  --font-jost: 'Jost', sans-serif;
+  --font-bubblegum-sans: 'Bubblegum Sans', cursive;
+  --font-nunito: 'Nunito', sans-serif;
+
+  --spacing-7_5: 30px;
+  --spacing-12_5: 50px;
+  --spacing-15: 60px;
+
+  --shadow-3xl: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* 2. CONTAINER & LAYOUT */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+@media (min-width: 640px) {
+  .container { max-width: 640px; }
+}
+
+@media (min-width: 768px) {
+  .container { max-width: 768px; }
+}
+
+@media (min-width: 1024px) {
+  .container { max-width: 1024px; }
+}
+
+@media (min-width: 1290px) {
+  .container { max-width: 1290px; }
+}
+
+/* 3. TYPOGRAPHY & FONT MAPPING */
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #686868;
+}
+
+h1, h2, h3, h4, h5, h6, .font-jost {
+  font-family: 'Jost', sans-serif;
+  color: #090808;
+}
+
+p, .font-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.font-bubblegum-sans {
+  font-family: 'Bubblegum Sans', cursive !important;
+}
+
+/* Font weight utility classes matching original output */
+.font-bold,
+b,
+strong {
+  font-weight: 700 !important;
+}
+
+.font-semibold {
+  font-weight: 600 !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.font-normal {
+  font-weight: 400 !important;
+}
+
+h2.font-bold,
+h4.font-bold,
+h5.font-bold,
+span.font-bold {
+  font-weight: 700 !important;
+}
+
+h3.font-semibold,
+h5.font-semibold,
+a.font-semibold {
+  font-weight: 600 !important;
+}
+
+a.font-medium {
+  font-weight: 500 !important;
+}
+
+/* 4. COLOR & BORDER UTILITIES */
+/* Color Palette */
+.bg-destructive { background-color: #ED145B; }
+.text-destructive-foreground { color: #ED145B; }
+.border-destructive { border-color: #ED145B; }
+
+.bg-primary { background-color: #F7941E; }
+.text-primary { color: #F7941E; }
+.text-primary-foreground { color: #F7941E; }
+.border-primary { border-color: #F7941E; }
+
+.bg-secondary { background-color: #1CBBB4; }
+.text-secondary-foreground { color: #1CBBB4; }
+.border-secondary { border-color: #1CBBB4; }
+
+.bg-green { background-color: #73BE48; }
+.text-green-foreground { color: #73BE48; }
+.border-green { border-color: #73BE48; }
+
+.bg-warm { background-color: #FFF0E5; }
+.bg-background { background-color: #ffffff; }
+.text-cream-foreground { color: #ffffff; }
+.bg-muted { background-color: #090808; }
+.text-muted { color: #090808; }
+.text-muted-foreground { color: #686868; }
+
+/* Basic Borders and Layout */
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-2 {
+  border-width: 2px;
+  border-style: solid;
+}
+
+.border-gray-200 {
+  border-color: #eaedf2 !important;
+}
+
+.border-\[\#F2F2F2\],
+[class*="border-[#F2F2F2]"] {
+  border-color: #F2F2F2 !important;
+}
+
+/* Custom Spacing */
+.gap-7\.5 { gap: 30px; }
+.gap-y-7\.5 { row-gap: 30px; }
+.pt-15 { padding-top: 60px; }
+.pb-15 { padding-bottom: 60px; }
+.top-15 { top: 60px; }
+.w-7\.5 { width: 30px; }
+.max-h-15 { max-height: 60px; }
+
+@media (min-width: 768px) {
+  .md\:gap-7\.5 { gap: 30px; }
+}
+
+@media (min-width: 1024px) {
+  .lg\:gap-7\.5 { gap: 30px; }
+  .lg\:pt-15 { padding-top: 60px; }
+  .lg\:pb-15 { padding-bottom: 60px; }
+  .lg\:mb-15 { margin-bottom: 60px; }
+  .lg\:mt-7\.5 { margin-top: 30px; }
+  .lg\:py-7\.5 { padding-top: 30px; padding-bottom: 30px; }
+  .lg\:pl-7\.5 { padding-left: 30px; }
+}
+
+/* 5. BUTTONS & UI COMPONENTS */
+.btn {
+  position: relative;
+  z-index: 10;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.5s ease-in-out;
+  padding: 20px 30px;
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  line-height: normal;
+}
+
+@media (max-width: 1024px) {
+  .btn, .btn-rounded-full {
+    padding: 10px 30px;
+  }
+}
+
+/* Button sliding background default hover: Teal (#1CBBB4) */
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #1CBBB4;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  color: #ffffff !important;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+/* Header button (Get A Quote): Teal base, sliding green (#73BE48) on hover */
+.btn.after\:bg-green::after {
+  background-color: #73BE48 !important;
+}
+
+/* Hide Get A Quote button on header on screens < 640px */
+@media (max-width: 639px) {
+  header a.btn.sm\:flex {
+    display: none !important;
+  }
+}
+
+/* Banner button (Learn More): Green base, sliding Teal (#1CBBB4) on hover */
+
+/* Outline button (Get a quote): Normal weight black text */
+/* Outline button (Get a quote, Read More): Black text default, white on hover */
+.btn:not(.bg-primary):not(.bg-secondary):not(.bg-destructive):not(.bg-green) {
+  font-weight: 400 !important;
+  color: #000000 !important;
+  transition: all 0.3s ease !important;
+}
+
+.btn:not(.bg-primary):not(.bg-secondary):not(.bg-destructive):not(.bg-green):hover,
+.btn:hover,
+.btn:hover span,
+button.btn:hover,
+a.btn:hover {
+  color: #ffffff !important;
+}
+
+/* Read More link: Normal weight, black text, without arrows */
+.group\/btn,
+.group\/btn span {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400 !important;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Read More hover in Programs and Services: Green (#73BE48) */
+.group\/btn:hover span,
+.group\/card:hover .group\/btn span {
+  color: #73BE48 !important;
+}
+
+/* Blog Read More hover: Teal (#1CBBB4) */
+#blog .group\/btn:hover span,
+.blog .group\/btn:hover span,
+.group\/btn:hover span.group-hover\/btn\:text-secondary-foreground {
+  color: #1CBBB4 !important;
+}
+
+.group\/btn::after {
+  content: "" !important;
+  display: none !important;
+}
+
+
+/* 6. KEYFRAME ANIMATIONS */
+@keyframes left-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(18px); }
+}
+
+@keyframes left-right-2 {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-35px); }
+}
+
+@keyframes up-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes skw {
+  0%, 100% { transform: skewX(0); }
+  50% { transform: skewX(6deg); }
+}
+
+.animate-left-right { animation: left-right 2s linear infinite; }
+.animate-left-right-2 { animation: left-right-2 4s linear infinite; }
+.animate-up-down { animation: up-down 2s linear infinite; }
+.animate-skw { animation: skw 2s linear infinite; }
+
+/* 7. HEADER & NAVIGATION */
+#header.header-pinned {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.group:hover > ul {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+}
+
+/* 1. Desktop main menu items: Orange hover (#F7941E) */
+header nav.xl\:block > ul > li > a {
+  color: #090808;
+  transition: color 0.3s ease !important;
+}
+
+header nav.xl\:block > ul > li:hover > a,
+header nav.xl\:block > ul > li > a:hover {
+  color: #F7941E !important;
+}
+
+/* 2. Desktop dropdown submenu container */
+header nav.xl\:block ul li ul,
+header nav.xl\:block .group ul {
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+  border-radius: 4px;
+}
+
+/* 3. Desktop submenu items: Orange background (#F7941E) and white text on hover */
+header nav.xl\:block ul li ul li a,
+header nav.xl\:block .group ul li a {
+  display: block !important;
+  width: 100% !important;
+  color: #090808 !important;
+  background-color: transparent !important;
+  transition: all 0.3s ease !important;
+}
+
+header nav.xl\:block ul li ul li a:hover,
+header nav.xl\:block .group ul li a:hover {
+  background-color: #F7941E !important;
+  color: #ffffff !important;
+}
+
+/* 4. Mobile offcanvas drawer menu */
+.offcanva .dropdown-item {
+  background-color: #FFF0E5 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.offcanva .dropdown-item li a,
+.offcanva .dropdown-item a {
+  background-color: transparent !important;
+  color: #686868 !important;
+  box-shadow: none !important;
+  transition: none !important;
+}
+
+/* Mobile Drawer: No hover on regular items */
+.offcanva ul > li > a,
+.offcanva .dropdown-toggle {
+  color: #686868 !important;
+}
+
+.offcanva ul > li > a:hover,
+.offcanva .dropdown-toggle:hover,
+.offcanva .dropdown-item li a:hover,
+.offcanva .dropdown-item a:hover {
+  background-color: transparent !important;
+  color: #686868 !important;
+}
+
+/* Drawer Contact Us: Green hover (#73BE48) */
+.offcanva a.contact-us-link:hover,
+.offcanva a[href="#contact"].contact-us-link:hover {
+  color: #73BE48 !important;
+  background-color: transparent !important;
+  transition: color 0.3s ease !important;
+}
+
+/* 8. HERO BANNER & FRAMES */
+.rounded-\[125px\] {
+  border-radius: 125px;
+}
+
+/* 9. COUNTER SECTION: NUMBER TALKS */
+.grid > .border-gray-200 {
+  background-color: #ffffff;
+  border: 1px solid #eaedf2 !important;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.grid > .border-gray-200:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* 10. ABOUT US SECTION */
+.rounded-\[11px\] {
+  border-radius: 11px;
+}
+
+.bg-warm.rounded-\[11px\] {
+  background-color: #FFF0E5;
+  border: 1px solid rgba(247, 148, 30, 0.15);
+}
+
+.drop-shadow-\[0px_4\.8px_24\.4px_rgba\(19\,16\,34\,0\.10\)\] {
+  box-shadow: 0 4.8px 24.4px rgba(19, 16, 34, 0.10);
+  background-color: #ffffff;
+}
+
+/* 11. EDUCATIONAL PROGRAMS SECTION */
+.group\/card.border-\[\#F2F2F2\] {
+  background-color: #ffffff;
+  border: 2px solid #F2F2F2 !important;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.group\/card.border-\[\#F2F2F2\]:hover {
+  border-color: transparent !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Educational Programs left icon container */
+.group\/card > div:first-child {
+  border: 1px solid #F2F2F2;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.group\/card:hover > div:first-child {
+  background-color: #73BE48 !important;
+  border-color: #73BE48 !important;
+  color: #ffffff !important;
+}
+
+.group\/card:hover > div:first-child i {
+  color: #ffffff !important;
+}
+
+/* 12. PORTFOLIO TABS & CARDS */
+.tab-list label {
+  border: 1px solid #F2F2F2;
+  border-radius: 10px;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400 !important; /* Normal font weight */
+  color: #686868 !important;   /* Standard text color #686868 */
+  transition: all 0.4s ease;
+}
+
+.tab-list label:hover {
+  background-color: #F7941E;
+  color: #ffffff !important;
+  border-color: #F7941E;
+}
+
+#tab-education:checked ~ .tab-list label[for="tab-education"],
+#tab-school:checked ~ .tab-list label[for="tab-school"],
+#tab-learn:checked ~ .tab-list label[for="tab-learn"],
+#tab-child:checked ~ .tab-list label[for="tab-child"],
+#tab-coaching:checked ~ .tab-list label[for="tab-coaching"] {
+  background-color: #F7941E;
+  color: #ffffff !important;
+  border-color: #F7941E;
+}
+
+/* Hide all tabs by default */
+.portfolio-cards .target-card {
+  display: none !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Display smoothly when corresponding tab is selected */
+#tab-education:checked ~ .portfolio-cards .card-edu,
+#tab-school:checked ~ .portfolio-cards .card-sch,
+#tab-learn:checked ~ .portfolio-cards .card-lrn,
+#tab-child:checked ~ .portfolio-cards .card-chd,
+#tab-coaching:checked ~ .portfolio-cards .card-coa {
+  display: grid !important;
+  position: relative !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  animation: tabFadeIn 0.4s ease;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.portfolio-cards .group\/card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-cards .group\/card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: none !important;
+  transition: none !important;
+}
+
+.portfolio-cards .group\/card:hover img {
+  transform: none !important;
+}
+
+.portfolio-cards .group\/card .px-7\.5 {
+  background-color: rgba(247, 148, 30, 0.88);
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.portfolio-cards .group\/card:hover .px-7\.5 {
+  opacity: 0.9 !important;
+  visibility: visible !important;
+}
+
+/* Portfolio overlay white circular button */
+.portfolio-cards .group\/card a.rounded-full {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: none !important;
+}
+
+.portfolio-cards .group\/card a.rounded-full::after {
+  content: "" !important;
+  display: none !important;
+}
+
+.portfolio-cards .group\/card a.rounded-full:hover {
+  background-color: #ffffff !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 13. SERVICES & SWIPER CAROUSEL */
+@media (max-width: 1023px) {
+  .services,
+  section.services {
+    background-color: #FFF0E5 !important;
+  }
+  .services .container > div::after {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services,
+  section.services,
+  .services.bg-warm {
+    background-color: transparent !important;
+  }
+
+  .services .after\:bg-warm::after,
+  .services .container > div::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #FFF0E5 !important;
+    width: calc(100% - 279px) !important;
+    height: calc(100% - 120px) !important;
+    border-radius: 10px !important;
+    z-index: -1;
+  }
+}
+
+.service-card {
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 36px 30px;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover,
+.swiper-slide-active .service-card {
+  background-color: #ffffff !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.service-card .card-footer {
+  transition: all 0.4s ease;
+}
+
+.service-card:hover .card-footer,
+.swiper-slide-active .service-card .card-footer {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Pill-shaped pagination bar */
+.service-pagination {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  width: auto !important;
+}
+
+.service-pagination .swiper-pagination-bullet {
+  width: 14px !important;
+  height: 5px !important;
+  background-color: #cbd5e1 !important;
+  opacity: 1 !important;
+  border-radius: 9999px !important;
+  margin: 0 !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.service-pagination .swiper-pagination-bullet-active {
+  width: 32px !important;
+  background-color: #1CBBB4 !important;
+  opacity: 1 !important;
+  border-radius: 9999px !important;
+}
+
+/* 14. WOW.JS ANIMATION */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* OFFCANVAS MOBILE MENU */
+.offcanva {
+  border-left: 2px solid #F7941E !important;
+  color: #686868;
+}
+
+.offcanva p,
+.offcanva a,
+.offcanva li {
+  color: #686868;
+  font-weight: 400;
+}
+
+.offcanva .btn {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 14px 20px !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+  border-radius: 6px !important;
+}
+
+.offcanvaClose {
+  width: 40px;
+  height: 40px;
+  background-color: #F7941E;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.offcanvaClose:hover {
+  background-color: #73BE48;
+}
+
+/* Mobile menu toggle button */
+
+/* Header Scroll Pinning Transition */
+#header {
+  transition: top 0.3s ease-in-out !important;
+}
+
+/* Muted border for 4 social icons in top-header */
+#top-header ul a.rounded-md {
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+#top-header ul a.rounded-md:hover {
+  border-color: #F7941E !important;
+  background-color: #F7941E !important;
+}
+
+
+/* BLOCK 1: DEV 1 (HEADER TO SERVICES) */
+/* Ascent logo using Nunito font */
+header a span.text-3xl,
+.offcanva a span.text-3xl {
+  color: #090808 !important;
+  font-family: 'Nunito', sans-serif !important;
+}
+/* END BLOCK 1: DEV 1 */
+
